@@ -1,1 +1,539 @@
-x
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nema Uluwatu | Premium Boutique Accommodation</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LodgingBusiness",
+      "name": "Nema Uluwatu",
+      "description": "Premium boutique accommodation and studios perfectly positioned near Uluwatu's best beaches, restaurants, and nightlife.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "53JW+VRQ",
+        "addressLocality": "Pecatu, South Kuta",
+        "addressRegion": "Badung Regency, Bali",
+        "postalCode": "80361",
+        "addressCountry": "ID"
+      },
+      "amenityFeature": [
+        {"@type": "LocationFeatureSpecification", "name": "16m Swimming Pool", "value": "True"},
+        {"@type": "LocationFeatureSpecification", "name": "50mbps High-Speed Wi-Fi", "value": "True"},
+        {"@type": "LocationFeatureSpecification", "name": "4-Minute Walk to Thomas Beach", "value": "True"}
+      ]
+    }
+    </script>
+
+    <style>
+        /* High-End Minimalist Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1a1a1a;
+            background-color: #fcfcfc;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 400;
+            color: #111;
+        }
+        .bg-light {
+            background-color: #f4f4f4;
+        }
+
+        /* Navigation & Booking Button */
+        .navbar {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            padding: 30px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        .nav-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #fdfdfd; /* Set to white for splash image contrast */
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        .btn-book {
+            background-color: #fdfdfd;
+            color: #1a1a1a;
+            padding: 12px 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.85rem;
+            font-weight: 500;
+            border: 1px solid #fdfdfd;
+            transition: all 0.4s ease;
+        }
+        .btn-book:hover {
+            background-color: transparent;
+            color: #fdfdfd;
+        }
+
+        /* Cinematic Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/splash.jpg') center/cover;
+            color: #fdfdfd; 
+            padding: 20px;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            letter-spacing: 0.05em;
+            max-width: 600px;
+        }
+
+        /* Editorial Content Spacing */
+        .section {
+            padding: 120px 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .text-center {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .section-title {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        /* Asymmetrical Editorial Grid */
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            margin-top: 80px;
+        }
+        .image-block {
+            background-color: #eaeaea;
+            width: 100%;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            object-fit: cover;
+        }
+        .text-block h3 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Google Reviews Grid */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .review-card {
+            background: #fff;
+            padding: 40px;
+            border-radius: 4px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            text-align: left;
+        }
+        .stars {
+            color: #d4af37; /* Elegant Gold */
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .review-card p {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .review-card h4 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        /* Location & Map Settings */
+        .map-container {
+            width: 100%;
+            height: 500px;
+            margin-top: 60px;
+            border-radius: 4px;
+            overflow: hidden;
+            background-color: #eaeaea;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* FAQ Section CSS */
+        .faq-section {
+            padding: 100px 5%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .faq-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .faq-header h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #eaeaea;
+            padding: 25px 0;
+        }
+        .faq-question {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #333;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: color 0.3s ease;
+        }
+        .faq-question:hover {
+            color: #888;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 500px; 
+            padding-top: 20px;
+        }
+        .faq-answer p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Instagram Promo Section */
+        .instagram-section {
+            background-color: #fcfcfc;
+            padding: 100px 5%;
+            text-align: center;
+        }
+        .instagram-section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+        .insta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 50px auto;
+        }
+        .insta-post {
+            background-color: #ddd;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            object-fit: cover;
+        }
+        .btn-outline {
+            display: inline-block;
+            border: 1px solid #1a1a1a;
+            color: #1a1a1a;
+            padding: 12px 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.4s ease;
+        }
+        .btn-outline:hover {
+            background-color: #1a1a1a;
+            color: #fdfdfd;
+        }
+
+        /* Elegant Retreat Buyout Banner */
+        .retreat-section {
+            background-color: #1a1a1a;
+            color: #fdfdfd;
+            padding: 140px 5%;
+            text-align: center;
+        }
+        .retreat-section h2 {
+            color: #fdfdfd;
+            font-size: 3rem;
+            margin-bottom: 30px;
+        }
+        .retreat-section p {
+            max-width: 700px;
+            margin: 0 auto 40px auto;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+        .btn {
+            display: inline-block;
+            border: 1px solid #fdfdfd;
+            color: #fdfdfd;
+            padding: 15px 40px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.9rem;
+            transition: all 0.4s ease;
+        }
+        .btn:hover {
+            background-color: #fdfdfd;
+            color: #1a1a1a;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: #111;
+            color: #fdfdfd;
+            padding: 60px 5%;
+            text-align: center;
+        }
+        .footer h3 {
+            color: #fdfdfd;
+            margin-bottom: 15px;
+        }
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer a:hover {
+            color: #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .editorial-grid { grid-template-columns: 1fr; gap: 40px; }
+            .image-block { height: 400px; }
+            .section { padding: 80px 5%; }
+            .navbar { flex-direction: column; gap: 20px; padding: 20px 5%; }
+            .map-container { height: 350px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">Nema Uluwatu</div>
+        <a href="https://www.booking.com/hotel/id/nema-uluwatu.html?chal_t=1784683342481&force_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank" class="btn-book">Book Here</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Nema Uluwatu</h1>
+        <p>The freedom of a homestay. The luxury of a boutique hotel.</p>
+    </div>
+
+    <div class="section text-center">
+        <h2 class="section-title">A World-Class Escape</h2>
+        <p>Curated for modern travelers, digital creatives, and those who appreciate refined design. Nema Uluwatu offers a sanctuary in the heart of Bali. Enjoy premium services and an effortless social vibe in a space that feels entirely your own.</p>
+    </div>
+
+    <div class="section">
+        <div class="editorial-grid">
+            <img src="images/drone.jpg" alt="Aerial view of Nema Uluwatu" class="image-block">
+            <div class="text-block">
+                <h3>Anchored in the Action</h3>
+                <p>You are perfectly positioned. We are located just a 4-minute walk from the white sands of Thomas Beach, placing you moments away from Uluwatu's renowned culinary scene, aesthetic cafes, and legendary clifftop nightlife.</p>
+            </div>
+        </div>
+
+        <div class="editorial-grid" style="direction: rtl;">
+            <img src="images/studio.jpg" alt="Sunlit Work Nook" class="image-block">
+            <div class="text-block" style="direction: ltr;">
+                <h3>Curated for Creatives</h3>
+                <p>Seamlessly blend work and play. Our 12 studios feature sunlit work nooks designed specifically for remote-working nomads who require high aesthetic standards without compromising on productivity.</p>
+            </div>
+        </div>
+        
+        <div class="editorial-grid">
+            <img src="images/bath.png" alt="Luxurious Tropical Outdoor Bathroom at Nema Uluwatu" class="image-block">
+            <div class="text-block">
+                <h3>Tropical Outdoor Living</h3>
+                <p>Experience the ultimate Balinese luxury. Our stunning outdoor bathrooms blend complete privacy with the raw beauty of nature, allowing you to unwind under the sun or stars in your own personal sanctuary.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section bg-light">
+        <h2 class="section-title text-center">Guest Experiences</h2>
+        <p class="text-center" style="margin-bottom: 50px;">Don't just take our word for it. Here is what our guests are saying on Google.</p>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"The absolute best spot in Uluwatu. The design is stunning, the Wi-Fi actually works for video calls, and you can walk to all the best cafes and Thomas Beach."</p>
+                <h4>- Sarah M.</h4>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Perfect balance of a luxury boutique feel without the stuffy resort vibe. The 16m pool is incredible after a morning surf."</p>
+                <h4>- James T.</h4>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Location is 10/10. We were steps away from amazing restaurants and just a quick scooter ride to the major beach clubs. Highly recommend!"</p>
+                <h4>- Elena R.</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title text-center">Find Your Sanctuary</h2>
+        <div class="text-center">
+            <p><strong>Nema Uluwatu</strong><br>53JW+VRQ, Pecatu, South Kuta, Badung Regency, Bali 80361, Indonesia</p>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15771.39868725916!2d115.101783!3d-8.8164319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd24ff255555555%3A0x5555555555555555!2sUluwatu%2C%20Bali!5e0!3m2!1sen!2sid!4v1690000000000!5m2!1sen!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <section class="faq-section">
+        <div class="faq-header">
+            <h2>The Details</h2>
+            <p>Everything you need to know about staying at Uluwatu's premier boutique accommodation.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Are you close to the beach, restaurants, and bars?</div>
+            <div class="faq-answer">
+                <p>Yes, we are right in the heart of it. Nema Uluwatu is a short 4-minute walk to Thomas Beach. You won't need to travel far for world-class dining or nightlife—we are just steps away from Uluwatu's most sought-after cafes, restaurants, and clifftop beach clubs.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Is Nema Uluwatu suitable for solo female travelers?</div>
+            <div class="faq-answer">
+                <p>Absolutely. We prioritize your peace of mind so you can fully relax. Nema Uluwatu is a highly private sanctuary featuring dedicated overnight security. Our location also makes independent exploration effortless—you are just a short, safe stroll away from Thomas Beach and Uluwatu’s vibrant cafe and dining scene, meaning you never have to travel far.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Is the Wi-Fi fast enough for remote work?</div>
+            <div class="faq-answer">
+                <p>Absolutely. We know how crucial connectivity is, so we've equipped the entire property with highly reliable 50mbps fiber-optic Wi-Fi. Combined with the sunlit work nooks in our studios, it’s the ideal setup for digital creatives.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What kind of vibe can I expect?</div>
+            <div class="faq-answer">
+                <p>We provide the high-end amenities of a boutique hotel with the relaxed, unpretentious freedom of a premium homestay. It’s a stylish, aesthetic environment perfect for relaxing by our 16m pool during the day before heading out to experience Uluwatu's vibrant social scene at night.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can I rent the entire property for a retreat?</div>
+            <div class="faq-answer">
+                <p>Yes. You can rent all 12 studios for a complete property buyout. With our expansive pool, daily housekeeping, and private grounds, Nema Uluwatu serves as the ultimate luxurious sanctuary for hosting group wellness escapes or private retreats.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="instagram-section">
+        <h2>Live the Vibe</h2>
+        <p>Explore the aesthetics and tag us in your Uluwatu memories.</p>
+        
+        <div class="insta-grid">
+            <img src="images/insta1.jpg" alt="Nema Uluwatu Instagram" class="insta-post">
+            <img src="images/insta2.jpg" alt="Nema Uluwatu Instagram" class="insta-post">
+            <img src="images/insta3.jpg" alt="Nema Uluwatu Instagram" class="insta-post">
+            <img src="images/insta4.jpg" alt="Nema Uluwatu Instagram" class="insta-post">
+        </div>
+
+        <a href="https://www.instagram.com/nemauluwatu/" target="_blank" class="btn-outline">@nemauluwatu</a>
+    </section>
+
+    <div class="retreat-section">
+        <h2>Your Private Sanctuary</h2>
+        <p>Seeking an exclusive venue for a wellness escape or creative offsite? Rent all 12 studios for a complete property buyout and transform Nema Uluwatu into your private backdrop.</p>
+        <a href="mailto:nemauluwatu@gmail.com?subject=Retreat%20Buyout%20Inquiry" class="btn">Inquire About Buyouts</a>
+    </div>
+    
+    <footer class="footer">
+        <h3>Contact Us</h3>
+        <p>Questions about booking or property buyouts?</p>
+        <p>Email us directly at: <a href="mailto:nemauluwatu@gmail.com">nemauluwatu@gmail.com</a></p>
+    </footer>
+
+    <script>
+        // Waits for the website to fully load before running the script
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            // Select all the FAQ items
+            const faqItems = document.querySelectorAll(".faq-item");
+
+            // Add a click function to each question
+            faqItems.forEach(item => {
+                const question = item.querySelector(".faq-question");
+                
+                question.addEventListener("click", () => {
+                    // Close all other open items for a clean, premium UI experience
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains("active")) {
+                            otherItem.classList.remove("active");
+                        }
+                    });
+                    
+                    // Toggle the clicked item open or closed
+                    item.classList.toggle("active");
+                });
+            });
+            
+        });
+    </script>
+
+</body>
+</html>
