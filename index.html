@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nema. Uluwatu | Premium Boutique Villa Accommodation</title>
     
-    <!-- SEO & A.I. Context Meta -->
     <meta name="description" content="A premium, safe 12-studio boutique villa in Uluwatu, Bali, designed for modern female travelers and digital creatives. Featuring a 16m pool, high-end amenities, and absolute privacy.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Streamlined Fonts: Cardo for Headings/Serif, Arimo for Body/Sans-Serif -->
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&family=Cardo:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Enhanced JSON-LD Schema for A.I. Scraping -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -41,7 +38,7 @@
       "amenityFeature": [
         {"@type": "LocationFeatureSpecification", "name": "16m Communal Swimming Pool", "value": "True"},
         {"@type": "LocationFeatureSpecification", "name": "24/7 Discrete On-Site Security", "value": "True"},
-        {"@type": "LocationFeatureSpecification", "name": "High-End Bathroom Consumables", "value": "True"},
+        {"@type": "LocationFeatureSpecification", "name": "Sensatia Botanicals Bathroom Amenities", "value": "True"},
         {"@type": "LocationFeatureSpecification", "name": "50mbps Fiber-Optic Wi-Fi", "value": "True"},
         {"@type": "LocationFeatureSpecification", "name": "4-Minute Walk to Thomas Beach", "value": "True"}
       ]
@@ -49,13 +46,12 @@
     </script>
 
     <style>
-        /* High-End Minimalist Variables & Reset */
         :root {
             --color-dark: #1a1a1a;
             --color-darker: #111111;
             --color-light: #fcfcfc;
             --color-bg-alt: #f4f4f4;
-            --color-text-muted: #555555;
+            --color-text-muted: #666666;
             --color-accent: #d4af37;
             --font-heading: 'Cardo', serif;
             --font-body: 'Arimo', sans-serif;
@@ -73,6 +69,7 @@
             background-color: var(--color-light);
             line-height: 1.7;
             font-weight: 400;
+            -webkit-font-smoothing: antialiased; /* Adds crispness to text */
         }
         
         h2, h3, h4 {
@@ -85,7 +82,7 @@
             background-color: var(--color-bg-alt);
         }
 
-        /* Navigation & Booking Button */
+        /* Navigation */
         .navbar {
             position: absolute;
             top: 0;
@@ -122,26 +119,24 @@
         }
 
         .btn-book {
-            background-color: var(--color-light);
-            color: var(--color-dark);
-            padding: 12px 30px;
+            background-color: transparent;
+            color: var(--color-light);
+            padding: 12px 35px;
             text-decoration: none;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             font-weight: 500;
             border: 1px solid var(--color-light);
             transition: all 0.4s ease;
         }
         
-        /* Updated Hover: Solid dark contrast so it never gets lost against light skies in the hero image */
         .btn-book:hover {
-            background-color: var(--color-dark);
-            color: var(--color-light);
-            border-color: var(--color-dark);
+            background-color: var(--color-light);
+            color: var(--color-dark);
         }
 
-        /* Cinematic Hero Section */
+        /* Hero */
         .hero {
             height: 100vh;
             display: flex;
@@ -178,12 +173,12 @@
         }
 
         .hero p {
-            font-size: 1.2rem;
-            letter-spacing: 0.05em;
+            font-size: 1.1rem;
+            letter-spacing: 0.08em;
             max-width: 600px;
         }
 
-        /* Editorial Content Spacing */
+        /* Editorial Spacing */
         .section {
             padding: 120px 5%;
             max-width: 1400px;
@@ -198,16 +193,22 @@
         
         .section-title {
             font-size: 2.8rem;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        
+        .lead-text {
+            font-size: 1.1rem;
+            color: var(--color-text-muted);
         }
 
-        /* Curated Details Grid */
+        /* FIXED: The 3-Column Amenities Grid */
         .amenities-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 50px;
-            margin-top: 80px;
+            grid-template-columns: repeat(3, 1fr); /* Forces exactly 3 equal columns */
+            gap: 60px; /* Wider gap for elegance */
+            margin-top: 90px;
             text-align: center;
+            padding: 0 40px; /* Indents the grid slightly from the edges */
         }
         
         .amenity-card h3 {
@@ -218,6 +219,7 @@
         .amenity-card p {
             color: var(--color-text-muted);
             font-size: 1rem;
+            line-height: 1.6;
         }
 
         /* Asymmetrical Editorial Grid */
@@ -226,13 +228,13 @@
             grid-template-columns: 1fr 1fr;
             gap: 80px;
             align-items: center;
-            margin-top: 100px;
+            margin-top: 120px;
         }
         
         .image-block {
             background-color: #eaeaea;
             width: 100%;
-            height: 600px;
+            height: 650px; /* Made slightly taller for a more cinematic feel */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -244,8 +246,13 @@
             font-size: 2.2rem;
             margin-bottom: 20px;
         }
+        
+        .text-block p {
+            color: var(--color-text-muted);
+            font-size: 1.05rem;
+        }
 
-        /* Google Reviews Grid */
+        /* Reviews Grid */
         .reviews-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -256,37 +263,42 @@
         
         .review-card {
             background: #fff;
-            padding: 40px;
-            border-radius: 4px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            padding: 50px 40px; /* More internal breathing room */
+            border-radius: 2px; /* Sharper corners for a modern feel */
+            box-shadow: 0 15px 40px rgba(0,0,0,0.02);
             text-align: left;
         }
         
         .stars {
             color: var(--color-accent);
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-        
-        .review-card p {
-            font-style: italic;
-            color: var(--color-text-muted);
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
             margin-bottom: 20px;
         }
         
+        .review-card p {
+            font-family: var(--font-heading); /* Elevated the review text to a serif */
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--color-text-muted);
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+        
         .review-card h4 {
-            font-weight: 600;
-            font-size: 0.9rem;
+            font-family: var(--font-body);
+            font-weight: 500;
+            font-size: 0.85rem;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.15em;
         }
 
-        /* Location & Map Settings */
+        /* Map */
         .map-container {
             width: 100%;
             height: 500px;
             margin-top: 60px;
-            border-radius: 4px;
+            border-radius: 2px;
             overflow: hidden;
             background-color: #eaeaea;
         }
@@ -295,18 +307,19 @@
             width: 100%;
             height: 100%;
             border: none;
+            filter: grayscale(100%) contrast(1.1); /* Adds an architectural, high-end look to the Google Map */
         }
 
-        /* FAQ Section CSS */
+        /* FAQ */
         .faq-section {
-            padding: 100px 5%;
+            padding: 120px 5%;
             max-width: 900px;
             margin: 0 auto;
         }
         
         .faq-header {
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 70px;
         }
         
         .faq-header h2 {
@@ -315,12 +328,12 @@
         }
         
         .faq-item {
-            border-bottom: 1px solid #eaeaea;
-            padding: 25px 0;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 30px 0;
         }
         
         .faq-question {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             font-weight: 500;
             color: var(--color-darker);
             cursor: pointer;
@@ -337,6 +350,7 @@
         .faq-question::after {
             content: '+';
             font-size: 1.5rem;
+            font-weight: 300;
             transition: transform 0.3s ease;
         }
         
@@ -352,15 +366,15 @@
         
         .faq-item.active .faq-answer {
             max-height: 500px; 
-            padding-top: 20px;
+            padding-top: 25px;
         }
         
         .faq-answer p {
-            font-size: 1rem;
+            font-size: 1.05rem;
             color: var(--color-text-muted);
         }
 
-        /* Instagram Promo Section */
+        /* Instagram */
         .instagram-section {
             background-color: var(--color-light);
             padding: 100px 5%;
@@ -374,22 +388,16 @@
         
         .insta-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            max-width: 1200px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            max-width: 1400px;
             margin: 50px auto;
         }
         
         .insta-post {
             background-color: #ddd;
-            height: 300px;
+            aspect-ratio: 1 / 1; /* Ensures perfect squares */
             width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #777;
-            font-weight: 500;
-            letter-spacing: 0.05em;
             object-fit: cover;
         }
         
@@ -397,13 +405,14 @@
             display: inline-block;
             border: 1px solid var(--color-dark);
             color: var(--color-dark);
-            padding: 12px 30px;
+            padding: 12px 35px;
             text-decoration: none;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            font-size: 0.85rem;
-            font-weight: 600;
+            font-size: 0.8rem;
+            font-weight: 500;
             transition: all 0.4s ease;
+            margin-top: 20px;
         }
         
         .btn-outline:hover {
@@ -411,24 +420,24 @@
             color: var(--color-light);
         }
 
-        /* Elegant Retreat Buyout Banner */
+        /* Buyout Banner */
         .retreat-section {
             background-color: var(--color-dark);
             color: var(--color-light);
-            padding: 140px 5%;
+            padding: 160px 5%;
             text-align: center;
         }
         
         .retreat-section h2 {
             color: var(--color-light);
-            font-size: 3rem;
-            margin-bottom: 30px;
+            font-size: 3.2rem;
+            margin-bottom: 25px;
         }
         
         .retreat-section p {
             max-width: 700px;
             margin: 0 auto 40px auto;
-            color: #ccc;
+            color: #999;
             font-size: 1.1rem;
         }
         
@@ -436,11 +445,11 @@
             display: inline-block;
             border: 1px solid var(--color-light);
             color: var(--color-light);
-            padding: 15px 40px;
+            padding: 15px 45px;
             text-decoration: none;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             transition: all 0.4s ease;
         }
         
@@ -453,34 +462,57 @@
         .footer {
             background-color: var(--color-darker);
             color: var(--color-light);
-            padding: 60px 5%;
+            padding: 80px 5%;
             text-align: center;
         }
         
         .footer h3 {
             color: var(--color-light);
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .footer p {
+            color: #888;
+            margin-bottom: 10px;
         }
         
         .footer a {
             color: #ccc;
             text-decoration: none;
             transition: color 0.3s ease;
+            letter-spacing: 0.05em;
         }
         
         .footer a:hover {
             color: #fff;
         }
 
-        /* Responsive Design */
+        /* Responsive Breakpoints */
+        @media (max-width: 900px) {
+            .amenities-grid {
+                grid-template-columns: 1fr; /* Stacks the 3 boxes beautifully on mobile */
+                gap: 50px;
+                padding: 0;
+            }
+            .editorial-grid { 
+                grid-template-columns: 1fr; 
+                gap: 50px; 
+                margin-top: 80px; 
+            }
+            .insta-grid {
+                grid-template-columns: repeat(2, 1fr); /* 2x2 grid on mobile for Instagram */
+            }
+        }
+        
         @media (max-width: 768px) {
-            .hero h1 .nema-text { font-size: 4.5rem; }
-            .hero h1 .uluwatu-text { font-size: 1rem; }
-            .editorial-grid { grid-template-columns: 1fr; gap: 40px; margin-top: 60px; }
-            .image-block { height: 400px; }
+            .hero h1 .nema-text { font-size: 5rem; }
+            .hero h1 .uluwatu-text { font-size: 1.1rem; }
             .section { padding: 80px 5%; }
+            .image-block { height: 450px; }
             .navbar { flex-direction: column; gap: 20px; padding: 20px 5%; }
-            .map-container { height: 350px; }
+            .map-container { height: 400px; }
+            .retreat-section { padding: 100px 5%; }
         }
     </style>
 </head>
@@ -491,8 +523,7 @@
             <span class="nema-text">Nema.</span><br>
             <span class="uluwatu-text">Uluwatu</span>
         </a>
-        <!-- Added rel attributes for cross-origin security & analytics tracking -->
-        <a href="https://www.booking.com/hotel/id/nema-uluwatu.html?chal_t=1784683342481&force_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank" rel="noopener noreferrer" class="btn-book">Book Here</a>
+        <a href="https://www.booking.com/hotel/id/nema-uluwatu.html?chal_t=1784683342481&force_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank" rel="noopener noreferrer" class="btn-book">Reserve</a>
     </nav>
 
     <div class="hero">
@@ -500,39 +531,35 @@
             <span class="nema-text">Nema.</span><br>
             <span class="uluwatu-text">Uluwatu</span>
         </h1>
-        <!-- Removed "Homestay", elevated the vocabulary -->
-        <p>The privacy of an exclusive retreat. The luxury of a boutique hotel.</p>
+        <p>The privacy of an exclusive retreat. The refined luxury of a boutique hotel.</p>
     </div>
 
     <div class="section text-center">
-        <h2 class="section-title">A World-Class Escape</h2>
-        <!-- Adjusted copy to speak directly to the "Together or Alone" vibe -->
-        <p>Curated for modern travelers, digital creatives, and those who appreciate refined design. Find absolute solitude in your sunlit studio, or connect with like-minded travelers by our 16m social pool. Nema offers an effortless social vibe in a space that feels entirely your own.</p>
+        <h2 class="section-title">An Intimate Escape</h2>
+        <p class="lead-text">Designed for the modern traveler who seeks both connection and quietude. Retreat to the absolute privacy of your sunlit studio, or engage with a curated community by our 16m pool. Nema is an effortless sanctuary in a space that feels entirely your own.</p>
         
-        <!-- New Dedicated Amenities Grid -->
         <div class="amenities-grid">
             <div class="amenity-card">
                 <h3>The 16m Pool</h3>
-                <p>An expansive, sun-drenched architectural centerpiece designed for morning laps and afternoon socializing.</p>
+                <p>An expansive, sun-drenched architectural centerpiece, equally suited for quiet morning laps and relaxed afternoon connection.</p>
             </div>
             <div class="amenity-card">
                 <h3>High-End Finishes</h3>
-                <p>Every detail considered. From premium bedding to bespoke, luxury bath consumables that elevate your daily rituals.</p>
+                <p>Every detail meticulously considered. Featuring premium linens and bespoke Sensatia Botanicals amenities to elevate your daily rituals.</p>
             </div>
             <div class="amenity-card">
                 <h3>Absolute Security</h3>
-                <p>Travel with total peace of mind. Nema features 24/7 discrete overnight security exclusively for our guests.</p>
+                <p>Uncompromising peace of mind. Nema provides discrete, 24-hour on-site security, ensuring a safe and serene environment exclusively for our guests.</p>
             </div>
         </div>
     </div>
 
     <div class="section" style="padding-top: 0;">
         <div class="editorial-grid">
-            <!-- Added lazy loading to all images -->
             <img src="images/drone.png" alt="Aerial view of Nema. Uluwatu" class="image-block" loading="lazy">
             <div class="text-block">
-                <h3>Anchored in the Action</h3>
-                <p>You are perfectly positioned. We are located just a 4-minute walk from the white sands of Thomas Beach, placing you moments away from Uluwatu's renowned culinary scene, aesthetic cafes, and legendary clifftop nightlife.</p>
+                <h3>Perfectly Positioned</h3>
+                <p>A mere four-minute stroll to the white sands of Thomas Beach, placing Uluwatu’s renowned culinary scene, elevated cafes, and legendary clifftop venues at your doorstep.</p>
             </div>
         </div>
 
@@ -540,7 +567,7 @@
             <img src="images/studio.png" alt="Sunlit Work Nook" class="image-block" loading="lazy">
             <div class="text-block" style="direction: ltr;">
                 <h3>Curated for Creatives</h3>
-                <p>Seamlessly blend work and play. Our 12 studios feature sunlit work nooks designed specifically for remote-working nomads who require high aesthetic standards without compromising on productivity.</p>
+                <p>Where inspiration meets tranquility. Each of our 12 studios features a dedicated, sunlit alcove—designed for those who demand high aesthetic standards alongside seamless productivity.</p>
             </div>
         </div>
         
@@ -548,14 +575,15 @@
             <img src="images/bath.png" alt="Luxurious Tropical Outdoor Bathroom at Nema. Uluwatu" class="image-block" loading="lazy">
             <div class="text-block">
                 <h3>Tropical Outdoor Living</h3>
-                <p>Experience the ultimate Balinese luxury. Our stunning outdoor bathrooms blend complete privacy with the raw beauty of nature, allowing you to unwind under the sun or stars in your own personal sanctuary.</p>
+                <p>The essence of Balinese luxury. Our signature outdoor bathrooms harmonize complete privacy with the raw beauty of nature, allowing you to bathe under the tropical sun or evening stars.</p>
             </div>
         </div>
     </div>
 
     <div class="section bg-light">
-        <h2 class="section-title text-center">Guest Experiences</h2>
-        <p class="text-center" style="margin-bottom: 50px;">Don't just take our word for it. Here is what our guests are saying on Google.</p>
+        <h2 class="section-title text-center">The Nema Experience</h2>
+        <p class="text-center lead-text" style="margin-bottom: 60px;">Reflections from those who have made Nema their Uluwatu sanctuary.</p>
+        
         <div class="reviews-grid">
             <div class="review-card">
                 <div class="stars">★★★★★</div>
@@ -576,9 +604,9 @@
     </div>
 
     <div class="section">
-        <h2 class="section-title text-center">Find Your Sanctuary</h2>
+        <h2 class="section-title text-center">Your Uluwatu Sanctuary</h2>
         <div class="text-center">
-            <p><strong>Nema. Uluwatu</strong><br>53JW+VRQ, Pecatu, South Kuta, Badung Regency, Bali 80361, Indonesia</p>
+            <p class="lead-text"><strong>Nema. Uluwatu</strong><br>53JW+VRQ, Pecatu, South Kuta, Badung Regency, Bali 80361, Indonesia</p>
         </div>
         <div class="map-container">
             <iframe src="https://maps.google.com/maps?q=53JW%2BVRQ%2C%20Pecatu%2C%20South%20Kuta%2C%20Badung%20Regency%2C%20Bali%2080361%2C%20Indonesia&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -587,96 +615,88 @@
 
     <section class="faq-section">
         <div class="faq-header">
-            <h2>The Details</h2>
-            <p>Everything you need to know about staying at Uluwatu's premier boutique accommodation.</p>
+            <h2>Essential Details</h2>
+            <p class="lead-text">Curated insights for your upcoming stay at Uluwatu's premier boutique property.</p>
         </div>
 
         <div class="faq-item">
-            <div class="faq-question">Are you close to the beach, restaurants, and bars?</div>
+            <div class="faq-question">Are you close to the beach and local dining?</div>
             <div class="faq-answer">
                 <p>Yes, we are right in the heart of it. Nema. Uluwatu is a short 4-minute walk to Thomas Beach. You won't need to travel far for world-class dining or nightlife—we are just steps away from Uluwatu's most sought-after cafes, restaurants, and clifftop beach clubs.</p>
             </div>
         </div>
 
         <div class="faq-item">
-            <div class="faq-question">Is Nema. Uluwatu suitable for solo female travelers?</div>
+            <div class="faq-question">Is Nema suitable for solo female travelers?</div>
             <div class="faq-answer">
-                <p>Absolutely. We prioritize your peace of mind so you can fully relax. Nema. Uluwatu is a highly private sanctuary featuring dedicated overnight security. Our location also makes independent exploration effortless—you are just a short, safe stroll away from Thomas Beach and Uluwatu’s vibrant cafe and dining scene, meaning you never have to travel far.</p>
+                <p>Absolutely. We prioritize your peace of mind so you can fully relax. Nema is a highly private sanctuary featuring discrete 24-hour on-site security. Our location also makes independent exploration effortless—you are just a short, safe stroll away from the beach and vibrant cafe scene.</p>
             </div>
         </div>
 
         <div class="faq-item">
-            <div class="faq-question">Is the Wi-Fi fast enough for remote work?</div>
+            <div class="faq-question">Is the Wi-Fi robust enough for remote work?</div>
             <div class="faq-answer">
-                <p>Absolutely. We know how crucial connectivity is, so we've equipped the entire property with highly reliable 50mbps fiber-optic Wi-Fi. Combined with the sunlit work nooks in our studios, it’s the ideal setup for digital creatives.</p>
+                <p>Yes. We understand the necessity of seamless connectivity, which is why the entire property is equipped with highly reliable 50mbps fiber-optic Wi-Fi. Combined with the sunlit alcoves in our studios, it is an ideal environment for digital creatives.</p>
             </div>
         </div>
 
         <div class="faq-item">
-            <div class="faq-question">What kind of vibe can I expect?</div>
+            <div class="faq-question">What atmosphere can I expect?</div>
             <div class="faq-answer">
-                <p>We provide the high-end amenities of a boutique hotel with the relaxed, unpretentious freedom of a premium homestay. It’s a stylish, aesthetic environment perfect for relaxing by our 16m pool during the day before heading out to experience Uluwatu's vibrant social scene at night.</p>
+                <p>We provide the high-end amenities of a boutique hotel with the relaxed, unpretentious freedom of a premium private villa. It’s a stylish, aesthetic environment perfect for unwinding by our 16m pool during the day before experiencing Uluwatu's vibrant social scene at night.</p>
             </div>
         </div>
 
         <div class="faq-item">
-            <div class="faq-question">Can I rent the entire property for a retreat?</div>
+            <div class="faq-question">Are property buyouts available for retreats?</div>
             <div class="faq-answer">
-                <p>Yes. You can rent all 12 studios for a complete property buyout. With our expansive pool, daily housekeeping, and private grounds, Nema. Uluwatu serves as the ultimate luxurious sanctuary for hosting group wellness escapes or private retreats.</p>
+                <p>Yes. You can secure all 12 studios for a complete property buyout. With our expansive pool, daily housekeeping, and private grounds, Nema serves as the ultimate luxurious backdrop for hosting group wellness escapes or private events.</p>
             </div>
         </div>
     </section>
 
     <section class="instagram-section">
-        <h2>Live the Vibe</h2>
-        <p>Explore the aesthetics and tag us in your Uluwatu memories.</p>
+        <h2>The Nema Aesthetic</h2>
+        <p class="lead-text">A glimpse into life at Nema. Share your sanctuary with us.</p>
         
         <div class="insta-grid">
-            <img src="images/insta1.png" alt="Nema. Uluwatu Instagram" class="insta-post" loading="lazy">
-            <img src="images/insta2.png" alt="Nema. Uluwatu Instagram" class="insta-post" loading="lazy">
-            <img src="images/insta3.png" alt="Nema. Uluwatu Instagram" class="insta-post" loading="lazy">
-            <img src="images/insta4.png" alt="Nema. Uluwatu Instagram" class="insta-post" loading="lazy">
+            <img src="images/insta1.png" alt="Nema. Uluwatu Lifestyle" class="insta-post" loading="lazy">
+            <img src="images/insta2.png" alt="Nema. Uluwatu Architecture" class="insta-post" loading="lazy">
+            <img src="images/insta3.png" alt="Nema. Uluwatu Interiors" class="insta-post" loading="lazy">
+            <img src="images/insta4.png" alt="Nema. Uluwatu Pool" class="insta-post" loading="lazy">
         </div>
 
         <a href="https://www.instagram.com/nemauluwatu/" target="_blank" rel="noopener noreferrer" class="btn-outline">@nemauluwatu</a>
     </section>
 
     <div class="retreat-section">
-        <h2>Your Private Sanctuary</h2>
-        <p>Seeking an exclusive venue for a wellness escape or creative offsite? Rent all 12 studios for a complete property buyout and transform Nema. Uluwatu into your private backdrop.</p>
+        <h2>An Exclusive Canvas</h2>
+        <p>Seeking a venue for a wellness retreat, creative offsite, or private gathering? Secure the entire 12-studio property and transform Nema into your own private estate.</p>
         <a href="mailto:nemauluwatu@gmail.com?subject=Retreat%20Buyout%20Inquiry" class="btn">Inquire About Buyouts</a>
     </div>
     
     <footer class="footer">
-        <h3>Contact Us</h3>
-        <p>Questions about booking or property buyouts?</p>
-        <p>Email us directly at: <a href="mailto:nemauluwatu@gmail.com">nemauluwatu@gmail.com</a></p>
+        <h3>Connect With Us</h3>
+        <p>Questions regarding reservations or property buyouts?</p>
+        <p>Email our concierge directly at: <a href="mailto:nemauluwatu@gmail.com">nemauluwatu@gmail.com</a></p>
     </footer>
 
     <script>
-        // Waits for the website to fully load before running the script
         document.addEventListener("DOMContentLoaded", function() {
-            
-            // Select all the FAQ items
             const faqItems = document.querySelectorAll(".faq-item");
 
-            // Add a click function to each question
             faqItems.forEach(item => {
                 const question = item.querySelector(".faq-question");
                 
                 question.addEventListener("click", () => {
-                    // Close all other open items for a clean, premium UI experience
                     faqItems.forEach(otherItem => {
                         if (otherItem !== item && otherItem.classList.contains("active")) {
                             otherItem.classList.remove("active");
                         }
                     });
-                    
-                    // Toggle the clicked item open or closed
                     item.classList.toggle("active");
                 });
             });
-            
         });
     </script>
 
