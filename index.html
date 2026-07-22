@@ -7,7 +7,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&family=Cardo:wght@400;700&family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
     <script type="application/ld+json">
     {
@@ -45,7 +45,7 @@
             line-height: 1.7;
             font-weight: 300;
         }
-        h1, h2, h3, h4 {
+        h2, h3, h4 {
             font-family: 'Playfair Display', serif;
             font-weight: 400;
             color: #111;
@@ -65,13 +65,28 @@
             align-items: center;
             z-index: 100;
         }
+        
+        /* New Logo Branding Styling */
         .nav-logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            color: #fdfdfd; /* Set to white for splash image contrast */
+            color: #fdfdfd; 
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            text-align: center;
+            line-height: 1;
+            text-decoration: none;
         }
+        .nav-logo .nema-text {
+            font-family: 'Cardo', serif;
+            font-size: 1.8rem;
+            letter-spacing: 0.05em;
+        }
+        .nav-logo .uluwatu-text {
+            font-family: 'Arimo', sans-serif;
+            font-size: 0.75rem;
+            letter-spacing: 0.25em;
+            display: block;
+            margin-top: 4px;
+        }
+
         .btn-book {
             background-color: #fdfdfd;
             color: #1a1a1a;
@@ -97,17 +112,31 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/splash.jpg') center/cover;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/splash.png') center/cover;
             color: #fdfdfd; 
             padding: 20px;
             position: relative;
         }
+        
+        /* New Hero Branding Styling */
         .hero h1 {
-            font-size: 4rem;
-            letter-spacing: 0.1em;
             text-transform: uppercase;
             margin-bottom: 20px;
+            line-height: 1.1;
         }
+        .hero h1 .nema-text {
+            font-family: 'Cardo', serif;
+            font-size: 5rem;
+            letter-spacing: 0.05em;
+        }
+        .hero h1 .uluwatu-text {
+            font-family: 'Arimo', sans-serif;
+            font-size: 1.8rem;
+            letter-spacing: 0.25em;
+            display: block;
+            margin-top: 5px;
+        }
+
         .hero p {
             font-size: 1.2rem;
             letter-spacing: 0.05em;
@@ -356,7 +385,8 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.5rem; }
+            .hero h1 .nema-text { font-size: 3.5rem; }
+            .hero h1 .uluwatu-text { font-size: 1.2rem; }
             .editorial-grid { grid-template-columns: 1fr; gap: 40px; }
             .image-block { height: 400px; }
             .section { padding: 80px 5%; }
@@ -368,12 +398,18 @@
 <body>
 
     <nav class="navbar">
-        <div class="nav-logo">Nema Uluwatu</div>
+        <a href="#" class="nav-logo">
+            <span class="nema-text">Nema</span><br>
+            <span class="uluwatu-text">Uluwatu</span>
+        </a>
         <a href="https://www.booking.com/hotel/id/nema-uluwatu.html?chal_t=1784683342481&force_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank" class="btn-book">Book Here</a>
     </nav>
 
     <div class="hero">
-        <h1>Nema Uluwatu</h1>
+        <h1>
+            <span class="nema-text">Nema</span><br>
+            <span class="uluwatu-text">Uluwatu</span>
+        </h1>
         <p>The freedom of a homestay. The luxury of a boutique hotel.</p>
     </div>
 
@@ -384,7 +420,7 @@
 
     <div class="section">
         <div class="editorial-grid">
-            <img src="images/drone.jpg" alt="Aerial view of Nema Uluwatu" class="image-block">
+            <img src="images/drone.png" alt="Aerial view of Nema Uluwatu" class="image-block">
             <div class="text-block">
                 <h3>Anchored in the Action</h3>
                 <p>You are perfectly positioned. We are located just a 4-minute walk from the white sands of Thomas Beach, placing you moments away from Uluwatu's renowned culinary scene, aesthetic cafes, and legendary clifftop nightlife.</p>
@@ -392,7 +428,7 @@
         </div>
 
         <div class="editorial-grid" style="direction: rtl;">
-            <img src="images/studio.jpg" alt="Sunlit Work Nook" class="image-block">
+            <img src="images/studio.png" alt="Sunlit Work Nook" class="image-block">
             <div class="text-block" style="direction: ltr;">
                 <h3>Curated for Creatives</h3>
                 <p>Seamlessly blend work and play. Our 12 studios feature sunlit work nooks designed specifically for remote-working nomads who require high aesthetic standards without compromising on productivity.</p>
@@ -487,10 +523,10 @@
         <p>Explore the aesthetics and tag us in your Uluwatu memories.</p>
         
         <div class="insta-grid">
-            <img src="images/insta1.jpg" alt="Nema Uluwatu Instagram" class="insta-post">
-            <img src="images/insta2.jpg" alt="Nema Uluwatu Instagram" class="insta-post">
-            <img src="images/insta3.jpg" alt="Nema Uluwatu Instagram" class="insta-post">
-            <img src="images/insta4.jpg" alt="Nema Uluwatu Instagram" class="insta-post">
+            <img src="images/insta1.png" alt="Nema Uluwatu Instagram" class="insta-post">
+            <img src="images/insta2.png" alt="Nema Uluwatu Instagram" class="insta-post">
+            <img src="images/insta3.png" alt="Nema Uluwatu Instagram" class="insta-post">
+            <img src="images/insta4.png" alt="Nema Uluwatu Instagram" class="insta-post">
         </div>
 
         <a href="https://www.instagram.com/nemauluwatu/" target="_blank" class="btn-outline">@nemauluwatu</a>
