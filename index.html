@@ -69,6 +69,7 @@
     </script>
 
     <style>
+        /* High-End Minimalist Variables & Reset */
         :root {
             --color-dark: #1a1a1a;
             --color-darker: #111111;
@@ -105,6 +106,7 @@
             background-color: var(--color-bg-alt);
         }
 
+        /* Navigation */
         .navbar {
             position: absolute;
             top: 0;
@@ -158,6 +160,7 @@
             color: var(--color-dark);
         }
 
+        /* Hero */
         .hero {
             height: 100vh;
             display: flex;
@@ -165,7 +168,6 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            /* FIXED: Added images/ */
             background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/splash.png') center/cover;
             color: var(--color-light); 
             padding: 20px;
@@ -200,6 +202,7 @@
             max-width: 600px;
         }
 
+        /* Editorial Spacing */
         .section {
             padding: 120px 5%;
             max-width: 1400px;
@@ -222,6 +225,7 @@
             color: var(--color-text-muted);
         }
 
+        /* 3-Column Amenities Grid */
         .amenities-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -242,6 +246,7 @@
             line-height: 1.6;
         }
 
+        /* Asymmetrical Editorial Grid */
         .editorial-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -271,6 +276,7 @@
             font-size: 1.05rem;
         }
 
+        /* Reviews Grid */
         .reviews-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -329,6 +335,7 @@
             color: var(--color-light);
         }
 
+        /* Map */
         .map-container {
             width: 100%;
             height: 500px;
@@ -345,6 +352,7 @@
             filter: grayscale(100%) contrast(1.1);
         }
 
+        /* FAQ */
         .faq-section {
             padding: 120px 5%;
             max-width: 900px;
@@ -414,6 +422,7 @@
             line-height: 1.7;
         }
 
+        /* Instagram */
         .instagram-section {
             background-color: var(--color-light);
             padding: 100px 5%;
@@ -459,6 +468,7 @@
             color: var(--color-light);
         }
 
+        /* Retreat Banner */
         .retreat-section {
             background-color: var(--color-dark);
             color: var(--color-light);
@@ -496,6 +506,7 @@
             color: var(--color-dark);
         }
         
+        /* Footer */
         .footer {
             background-color: var(--color-darker);
             color: var(--color-light);
@@ -525,6 +536,7 @@
             color: #fff;
         }
 
+        /* Responsive Breakpoints */
         @media (max-width: 900px) {
             .amenities-grid {
                 grid-template-columns: 1fr;
@@ -655,7 +667,7 @@
                 </div>
             </div>
             
-            <a href="https://maps.google.com/maps?q=-8.817868,115.097039" target="_blank" rel="noopener noreferrer" class="trust-badge">
+            <a href="https://www.google.com/maps/place/Nema.+Uluwatu/@-8.8180936,115.094355,17z/data=!4m11!3m10!1s0x2dd2450984ae7601:0x4ec79eb32ef51e23!5m4!1s2026-08-14!2i2!4m1!1i2!8m2!3d-8.8180936!4d115.0969299!16s%2Fg%2F11x31xxytr?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="trust-badge">
                 Rated 5-Stars Based on 164 Google Reviews
             </a>
         </div>
@@ -743,11 +755,13 @@
                 question.addEventListener("click", () => {
                     const isActive = item.classList.contains("active");
                     
+                    // Close all others and reset ARIA
                     faqItems.forEach(otherItem => {
                         otherItem.classList.remove("active");
                         otherItem.querySelector(".faq-question").setAttribute("aria-expanded", "false");
                     });
 
+                    // Toggle current and update ARIA
                     if (!isActive) {
                         item.classList.add("active");
                         question.setAttribute("aria-expanded", "true");
