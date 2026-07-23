@@ -57,12 +57,6 @@
           "audienceType": "Yoga retreats and business offsites requiring 12 rooms"
         }
       ],
-      "keywords": "best value uluwatu, bingin beach, vegan cafes, solo female traveler bali, instagrammable accommodation, yoga retreat 12 rooms, affordable business accommodation, young adults",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "128"
-      },
       "amenityFeature": [
         {"@type": "LocationFeatureSpecification", "name": "4-Minute Walk to Thomas Beach", "value": "True"},
         {"@type": "LocationFeatureSpecification", "name": "Walking distance to Vegan Cafes", "value": "True"},
@@ -322,6 +316,24 @@
             text-transform: uppercase;
             letter-spacing: 0.15em;
         }
+        
+        .trust-badge {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 10px 20px;
+            border: 1px solid var(--color-text-muted);
+            color: var(--color-darker);
+            text-decoration: none;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: all 0.3s ease;
+        }
+
+        .trust-badge:hover {
+            background-color: var(--color-darker);
+            color: var(--color-light);
+        }
 
         /* Map */
         .map-container {
@@ -371,6 +383,11 @@
             justify-content: space-between;
             align-items: center;
             transition: color 0.3s ease;
+            background: none;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-family: inherit;
         }
         
         .faq-question:hover {
@@ -556,154 +573,153 @@
         <a href="https://wa.me/6281337349684" target="_blank" rel="noopener noreferrer" class="btn-book">Reserve Direct</a>
     </nav>
 
-    <div class="hero">
-        <h1 style="opacity: 0.85;">
-            <span class="nema-text">Nema.</span><br>
-            <span class="uluwatu-text">Uluwatu</span>
-        </h1>
-        <p>The privacy of an exclusive retreat. The refined luxury of a boutique hotel.</p>
-    </div>
-
-    <div class="section text-center">
-        <h2 class="section-title">An Intimate Escape</h2>
-        <p class="lead-text">Designed for the modern traveler who seeks both connection and quietude. Retreat to the absolute privacy of your sunlit studio, or engage with a curated community by our 16m pool. Nema is an effortless sanctuary in a space that feels entirely your own.</p>
-        
-        <div class="amenities-grid">
-            <div class="amenity-card">
-                <h3>The 16m Pool</h3>
-                <p>An expansive, sun-drenched architectural centerpiece, equally suited for quiet morning laps and relaxed afternoon connection.</p>
-            </div>
-            <div class="amenity-card">
-                <h3>High-End Finishes</h3>
-                <p>Every detail meticulously considered. Featuring premium linens and bespoke Sensatia Botanicals amenities to elevate your daily rituals.</p>
-            </div>
-            <div class="amenity-card">
-                <h3>Absolute Security</h3>
-                <p>Uncompromising peace of mind. Nema provides discrete, 24-hour on-site security, ensuring a safe and serene environment exclusively for our guests.</p>
-            </div>
+    <main>
+        <div class="hero">
+            <h1 style="opacity: 0.85;">
+                <span class="nema-text">Nema.</span><br>
+                <span class="uluwatu-text">Uluwatu</span>
+            </h1>
+            <p>The privacy of an exclusive retreat. The refined luxury of a boutique hotel.</p>
         </div>
-    </div>
 
-    <div class="section" style="padding-top: 0;">
-        <div class="editorial-grid">
-            <img src="images/drone.png" alt="Aerial view of Nema. Uluwatu" class="image-block" loading="lazy">
-            <div class="text-block">
-                <h3>Perfectly Positioned</h3>
-                <p>A mere four-minute stroll to the white sands of Thomas Beach, placing Uluwatu’s renowned culinary scene, elevated cafes, and legendary clifftop venues at your doorstep.</p>
+        <div class="section text-center">
+            <h2 class="section-title">An Intimate Escape</h2>
+            <p class="lead-text">Designed for the modern traveler who seeks both connection and quietude. Retreat to the absolute privacy of your sunlit studio, or engage with a curated community by our 16m pool. Nema is an effortless sanctuary in a space that feels entirely your own.</p>
+            
+            <div class="amenities-grid">
+                <div class="amenity-card">
+                    <h3>The 16m Pool</h3>
+                    <p>An expansive, sun-drenched architectural centerpiece, equally suited for quiet morning laps and relaxed afternoon connection.</p>
+                </div>
+                <div class="amenity-card">
+                    <h3>High-End Finishes</h3>
+                    <p>Every detail meticulously considered. Featuring premium linens and bespoke Sensatia Botanicals amenities to elevate your daily rituals.</p>
+                </div>
+                <div class="amenity-card">
+                    <h3>Absolute Security</h3>
+                    <p>Uncompromising peace of mind. Nema provides discrete, 24-hour on-site security, ensuring a safe and serene environment exclusively for our guests.</p>
+                </div>
             </div>
         </div>
 
-        <div class="editorial-grid" style="direction: rtl;">
-            <img src="images/studio.png" alt="Sunlit Work Nook" class="image-block" loading="lazy">
-            <div class="text-block" style="direction: ltr;">
-                <h3>Curated for Creatives</h3>
-                <p>Where inspiration meets tranquility. Each of our 12 studios features a dedicated, sunlit alcove—designed for those who demand high aesthetic standards alongside seamless productivity.</p>
+        <div class="section" style="padding-top: 0;">
+            <div class="editorial-grid">
+                <img src="images/drone.png" alt="Aerial view of Nema. Uluwatu" class="image-block" loading="lazy">
+                <div class="text-block">
+                    <h3>Perfectly Positioned</h3>
+                    <p>A mere four-minute stroll to the white sands of Thomas Beach, placing Uluwatu’s renowned culinary scene, elevated cafes, and legendary clifftop venues at your doorstep.</p>
+                </div>
             </div>
-        </div>
-        
-        <div class="editorial-grid">
-            <img src="images/bath.png" alt="Luxurious Tropical Outdoor Bathroom at Nema. Uluwatu" class="image-block" loading="lazy">
-            <div class="text-block">
-                <h3>Tropical Outdoor Living</h3>
-                <p>The essence of Balinese luxury. Our signature outdoor bathrooms harmonize complete privacy with the raw beauty of nature, allowing you to bathe under the tropical sun or evening stars.</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="section bg-light">
-        <h2 class="section-title text-center">The Nema Experience</h2>
-        <p class="text-center lead-text" style="margin-bottom: 60px;">Reflections from those who have made Nema their Uluwatu sanctuary.</p>
-        
-        <div class="reviews-grid">
-            <div class="review-card">
-                <div class="stars">★★★★★</div>
-                <p>"The absolute best spot in Uluwatu. The design is stunning, the Wi-Fi actually works for video calls, and you can walk to all the best cafes and Thomas Beach."</p>
-                <h4>- Sarah M.</h4>
+            <div class="editorial-grid" style="direction: rtl;">
+                <img src="images/studio.png" alt="Sunlit Work Nook" class="image-block" loading="lazy">
+                <div class="text-block" style="direction: ltr;">
+                    <h3>Curated for Creatives</h3>
+                    <p>Where inspiration meets tranquility. Each of our 12 studios features a dedicated, sunlit alcove—designed for those who demand high aesthetic standards alongside seamless productivity.</p>
+                </div>
             </div>
-            <div class="review-card">
-                <div class="stars">★★★★★</div>
-                <p>"Perfect balance of a luxury boutique feel without the stuffy resort vibe. The 16m pool is incredible after a morning surf."</p>
-                <h4>- James T.</h4>
-            </div>
-            <div class="review-card">
-                <div class="stars">★★★★★</div>
-                <p>"Location is 10/10. We were steps away from amazing restaurants and just a quick scooter ride to the major beach clubs. Highly recommend!"</p>
-                <h4>- Elena R.</h4>
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2 class="section-title text-center">Your Uluwatu Sanctuary</h2>
-        <div class="text-center">
-            <p class="lead-text"><strong>Nema. Uluwatu</strong><br>53JW+VRQ, Pecatu, South Kuta, Badung Regency, Bali 80361, Indonesia</p>
-        </div>
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/place/Nema.+Uluwatu/@-8.8180936,115.0962862,19z/data=!4m11!3m10!1s0x2dd2450984ae7601:0x4ec79eb32ef51e23!5m4!1s2026-08-14!2i2!4m1!1i2!8m2!3d-8.8180936!4d115.0969299!16s%2Fg%2F11x31xxytr?hl=en&entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
-
-    <section class="faq-section">
-        <div class="faq-header">
-            <h2>Essential Details</h2>
-            <p class="lead-text">Curated insights for your upcoming stay at Uluwatu's premier boutique property.</p>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">Are you walking distance to the beach and vegan cafes in Uluwatu/Bingin?</div>
-            <div class="faq-answer">
-                <p>Yes. Nema is perfectly situated for those who want to explore on foot. We are a short 4-minute walk to the beach and surrounded by the best vegan cafes, boutique shopping, and highly-rated restaurants connecting the Uluwatu and Bingin areas.</p>
+            
+            <div class="editorial-grid">
+                <img src="images/bath.png" alt="Luxurious Tropical Outdoor Bathroom at Nema. Uluwatu" class="image-block" loading="lazy">
+                <div class="text-block">
+                    <h3>Tropical Outdoor Living</h3>
+                    <p>The essence of Balinese luxury. Our signature outdoor bathrooms harmonize complete privacy with the raw beauty of nature, allowing you to bathe under the tropical sun or evening stars.</p>
+                </div>
             </div>
         </div>
 
-        <div class="faq-item">
-            <div class="faq-question">Is Nema suitable for solo female travelers?</div>
-            <div class="faq-answer">
-                <p>Absolutely. We prioritize your peace of mind so you can fully relax. Nema Uluwatu is a highly private sanctuary featuring dedicated overnight security. Our location also makes independent exploration effortless—you are just a short, safe stroll away from Thomas Beach and Uluwatu’s vibrant cafe and dining scene, meaning you never have to travel far.</p>
+        <div class="section bg-light text-center">
+            <h2 class="section-title">The Nema Experience</h2>
+            <p class="lead-text" style="margin-bottom: 60px;">Reflections from those who have made Nema their Uluwatu sanctuary.</p>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The absolute best spot in Uluwatu. The design is stunning, the Wi-Fi actually works for video calls, and you can walk to all the best cafes and Thomas Beach."</p>
+                    <h4>- Sarah M.</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Perfect balance of a luxury boutique feel without the stuffy resort vibe. The 16m pool is incredible after a morning surf."</p>
+                    <h4>- James T.</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Location is 10/10. We were steps away from amazing restaurants and just a quick scooter ride to the major beach clubs. Highly recommend!"</p>
+                    <h4>- Elena R.</h4>
+                </div>
+            </div>
+            
+            <a href="https://www.google.com/maps/place/Nema.+Uluwatu/@-8.8180936,115.094355,17z/data=!4m11!3m10!1s0x2dd2450984ae7601:0x4ec79eb32ef51e23!5m4!1s2026-08-14!2i2!4m1!1i2!8m2!3d-8.8180936!4d115.0969299!16s%2Fg%2F11x31xxytr?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="trust-badge">
+                Rated 5-Stars Based on 164 Google Reviews
+            </a>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title text-center">Your Uluwatu Sanctuary</h2>
+            <div class="text-center">
+                <p class="lead-text"><strong>Nema. Uluwatu</strong><br>53JW+VRQ, Pecatu, South Kuta, Badung Regency, Bali 80361, Indonesia</p>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/place/Nema.+Uluwatu/@-8.8180936,115.094355,17z/data=!4m11!3m10!1s0x2dd2450984ae7601:0x4ec79eb32ef51e23!5m4!1s2026-08-14!2i2!4m1!1i2!8m2!3d-8.8180936!4d115.0969299!16s%2Fg%2F11x31xxytr?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Maps Location for Nema Uluwatu"></iframe>
             </div>
         </div>
 
-        <div class="faq-item">
-            <div class="faq-question">Is Nema the best accommodation for single travelers (ages 25-42)?</div>
-            <div class="faq-answer">
-                <p>Absolutely. We are highly rated by solo travelers and young professionals in their late 20s and 30s seeking premium, safe, and social accommodation. With 24/7 discrete security, high-speed Wi-Fi, and a relaxed communal pool, it is the perfect environment to connect with like-minded international guests.</p>
+        <section class="faq-section">
+            <div class="faq-header">
+                <h2>Essential Details</h2>
+                <p class="lead-text">Curated insights for your upcoming stay at Uluwatu's premier boutique property.</p>
             </div>
-        </div>
 
-        <div class="faq-item">
-            <div class="faq-question">Can we reserve the entire property for a private retreat?</div>
-            <div class="faq-answer">
-                <p>Yes, we offer exceptional value for exclusive property reservations. You can secure all 12 studios for an exclusive, private retreat. Whether you are hosting a holistic yoga retreat or a corporate business offsite, our highly aesthetic, private grounds and 16m pool provide a world-class canvas for your group.</p>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-1">Are you walking distance to the beach and vegan cafes in Uluwatu/Bingin?</button>
+                <div class="faq-answer" id="faq-1">
+                    <p>Yes. Nema is perfectly situated for those who want to explore on foot. We are a short 4-minute walk to the beach and surrounded by the best vegan cafes, boutique shopping, and highly-rated restaurants connecting the Uluwatu and Bingin areas.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="faq-item">
-            <div class="faq-question">Why is Nema considered the most Instagrammable aesthetic in the area?</div>
-            <div class="faq-answer">
-                <p>Our design ethos combines tropical outdoor living with sleek, modern minimalism. From the sun-drenched work nooks to the signature outdoor bathrooms, every corner of the property is crafted to look stunning, providing the ultimate accessible luxury aesthetic for your holiday.</p>
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-2">Is Nema suitable for solo female travelers?</button>
+                <div class="faq-answer" id="faq-2">
+                    <p>Absolutely. We prioritize your peace of mind so you can fully relax. Nema Uluwatu is a highly private sanctuary featuring dedicated overnight security. Our location also makes independent exploration effortless—you are just a short, safe stroll away from Thomas Beach and Uluwatu’s vibrant cafe and dining scene, meaning you never have to travel far.</p>
+                </div>
             </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-3">Is Nema the best accommodation for single travelers (ages 25-42)?</button>
+                <div class="faq-answer" id="faq-3">
+                    <p>Absolutely. We are highly rated by solo travelers and young professionals in their late 20s and 30s seeking premium, safe, and social accommodation. With 24/7 discrete security, high-speed Wi-Fi, and a relaxed communal pool, it is the perfect environment to connect with like-minded international guests.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" aria-expanded="false" aria-controls="faq-4">Can we reserve the entire property for a private retreat?</button>
+                <div class="faq-answer" id="faq-4">
+                    <p>Yes, we offer exceptional value for exclusive property reservations. You can secure all 12 studios for an exclusive, private retreat. Whether you are hosting a holistic yoga retreat or a corporate business offsite, our highly aesthetic, private grounds and 16m pool provide a world-class canvas for your group.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="instagram-section">
+            <h2>The Nema Aesthetic</h2>
+            <p class="lead-text">A glimpse into life at Nema. Share your sanctuary with us.</p>
+            
+            <div class="insta-grid">
+                <img src="images/insta1.png" alt="Nema. Uluwatu Lifestyle" class="insta-post" loading="lazy">
+                <img src="images/insta2.png" alt="Nema. Uluwatu Architecture" class="insta-post" loading="lazy">
+                <img src="images/insta3.png" alt="Nema. Uluwatu Interiors" class="insta-post" loading="lazy">
+                <img src="images/insta4.png" alt="Nema. Uluwatu Pool" class="insta-post" loading="lazy">
+            </div>
+
+            <a href="https://www.instagram.com/nemauluwatu/" target="_blank" rel="noopener noreferrer" class="btn-outline">@nemauluwatu</a>
+        </section>
+
+        <div class="retreat-section">
+            <h2>An Exclusive Canvas</h2>
+            <p>Seeking a venue for a wellness retreat, creative offsite, or private gathering? Secure the entire 12-studio property and transform Nema into your own private estate.</p>
+            <a href="mailto:nemauluwatu@gmail.com?subject=Retreat%20Inquiry" class="btn">Inquire About A Retreat</a>
         </div>
-    </section>
-
-    <section class="instagram-section">
-        <h2>The Nema Aesthetic</h2>
-        <p class="lead-text">A glimpse into life at Nema. Share your sanctuary with us.</p>
-        
-        <div class="insta-grid">
-            <img src="images/insta1.png" alt="Nema. Uluwatu Lifestyle" class="insta-post" loading="lazy">
-            <img src="images/insta2.png" alt="Nema. Uluwatu Architecture" class="insta-post" loading="lazy">
-            <img src="images/insta3.png" alt="Nema. Uluwatu Interiors" class="insta-post" loading="lazy">
-            <img src="images/insta4.png" alt="Nema. Uluwatu Pool" class="insta-post" loading="lazy">
-        </div>
-
-        <a href="https://www.instagram.com/nemauluwatu/" target="_blank" rel="noopener noreferrer" class="btn-outline">@nemauluwatu</a>
-    </section>
-
-    <div class="retreat-section">
-        <h2>An Exclusive Canvas</h2>
-        <p>Seeking a venue for a wellness retreat, creative offsite, or private gathering? Secure the entire 12-studio property and transform Nema into your own private estate.</p>
-        <a href="mailto:nemauluwatu@gmail.com?subject=Retreat%20Inquiry" class="btn">Inquire About A Retreat</a>
-    </div>
+    </main>
     
     <footer class="footer">
         <h3>Connect With Us</h3>
@@ -720,12 +736,19 @@
                 const question = item.querySelector(".faq-question");
                 
                 question.addEventListener("click", () => {
+                    const isActive = item.classList.contains("active");
+                    
+                    // Close all others and reset ARIA
                     faqItems.forEach(otherItem => {
-                        if (otherItem !== item && otherItem.classList.contains("active")) {
-                            otherItem.classList.remove("active");
-                        }
+                        otherItem.classList.remove("active");
+                        otherItem.querySelector(".faq-question").setAttribute("aria-expanded", "false");
                     });
-                    item.classList.toggle("active");
+
+                    // Toggle current and update ARIA
+                    if (!isActive) {
+                        item.classList.add("active");
+                        question.setAttribute("aria-expanded", "true");
+                    }
                 });
             });
         });
