@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nema. Uluwatu | Premium Boutique Villa Accommodation</title>
     
-   <meta name="description" content="Premium boutique accommodation in Uluwatu. Affordable luxury designed for solo travelers, digital creatives, and exclusive 12-room private yoga retreats.">
+    <meta name="description" content="Premium boutique accommodation in Uluwatu. Affordable luxury designed for solo travelers, digital creatives, and exclusive 12-room private yoga retreats.">
     <link rel="canonical" href="https://www.nemauluwatu.com/">
     
     <meta property="og:type" content="website">
@@ -19,13 +19,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to the new external stylesheet -->
+    <link rel="stylesheet" href="style.css">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LodgingBusiness",
       "name": "Nema. Uluwatu",
-      "description": "The best value premium boutique accommodation in Uluwatu and Bingin. Highly instagrammable, affordable luxury designed for solo travelers, solo female travelers, young professionals, and 12-room yoga or business retreats. Walking distance to the beach and vegan cafes.",
+      "description": "Premium boutique accommodation in Uluwatu. Affordable luxury designed for solo travelers, digital creatives, and exclusive 12-room private yoga retreats.",
       "url": "https://www.nemauluwatu.com",
       "telephone": "+62-813-3734-9684",
       "priceRange": "$$$",
@@ -56,7 +59,7 @@
         },
         {
           "@type": "Audience",
-          "audienceType": "Yoga retreats and business offsites requiring 12 rooms"
+          "audienceType": "Yoga and health retreat organizers requiring a 12-room exclusive venue"
         }
       ],
       "amenityFeature": [
@@ -69,507 +72,11 @@
       ]
     }
     </script>
-
-    <style>
-        /* High-End Minimalist Variables & Reset */
-        :root {
-            --color-dark: #1a1a1a;
-            --color-darker: #111111;
-            --color-light: #fcfcfc;
-            --color-bg-alt: #f4f4f4;
-            --color-text-muted: #666666;
-            --color-accent: #d4af37;
-            --font-heading: 'Cardo', serif;
-            --font-body: 'Arimo', sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        
-        body {
-            font-family: var(--font-body);
-            color: var(--color-dark);
-            background-color: var(--color-light);
-            line-height: 1.7;
-            font-weight: 400;
-            -webkit-font-smoothing: antialiased;
-        }
-        
-        h2, h3, h4 {
-            font-family: var(--font-heading);
-            font-weight: 400;
-            color: var(--color-darker);
-        }
-        
-        .bg-light {
-            background-color: var(--color-bg-alt);
-        }
-
-        /* Navigation */
-        .navbar {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            padding: 30px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 100;
-        }
-        
-        .nav-logo {
-            color: var(--color-light); 
-            text-transform: uppercase;
-            text-align: center;
-            line-height: 1;
-            text-decoration: none;
-        }
-        
-        .nav-logo .nema-text {
-            font-family: var(--font-heading);
-            font-size: 1.8rem;
-            letter-spacing: 0.05em;
-            text-transform: none; 
-        }
-        
-        .nav-logo .uluwatu-text {
-            font-family: var(--font-body);
-            font-size: 0.75rem;
-            letter-spacing: 0.25em;
-            display: block;
-            margin-top: 4px;
-            text-transform: uppercase;
-        }
-
-        .btn-book {
-            background-color: transparent;
-            color: var(--color-light);
-            padding: 12px 35px;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            font-size: 0.8rem;
-            font-weight: 500;
-            border: 1px solid var(--color-light);
-            transition: all 0.4s ease;
-        }
-        
-        .btn-book:hover {
-            background-color: var(--color-light);
-            color: var(--color-dark);
-        }
-
-        /* Hero */
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/splash.png') center/cover;
-            color: var(--color-light); 
-            padding: 20px;
-            position: relative;
-        }
-        
-        .hero h1 {
-            margin-bottom: 20px;
-            line-height: 1.1;
-            opacity: 0.85;
-        }
-        
-        .hero h1 .nema-text {
-            font-family: var(--font-heading);
-            font-size: 8.5rem; 
-            letter-spacing: 0.05em;
-            text-transform: none; 
-        }
-        
-        .hero h1 .uluwatu-text {
-            font-family: var(--font-body);
-            font-size: 1.5rem; 
-            letter-spacing: 0.25em;
-            display: block;
-            margin-top: 5px;
-            text-transform: uppercase;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            letter-spacing: 0.08em;
-            max-width: 600px;
-        }
-
-        /* Editorial Spacing */
-        .section {
-            padding: 120px 5%;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        
-        .text-center {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .section-title {
-            font-size: 2.8rem;
-            margin-bottom: 25px;
-        }
-        
-        .lead-text {
-            font-size: 1.1rem;
-            color: var(--color-text-muted);
-        }
-
-        /* 3-Column Amenities Grid */
-        .amenities-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 60px;
-            margin-top: 90px;
-            text-align: center;
-            padding: 0 40px;
-        }
-        
-        .amenity-card h3 {
-            font-size: 1.6rem;
-            margin-bottom: 15px;
-        }
-        
-        .amenity-card p {
-            color: var(--color-text-muted);
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
-        /* Asymmetrical Editorial Grid */
-        .editorial-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 80px;
-            align-items: center;
-            margin-top: 120px;
-        }
-        
-        .image-block {
-            background-color: #eaeaea;
-            width: 100%;
-            height: 650px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #888;
-            object-fit: cover;
-        }
-        
-        .text-block h3 {
-            font-size: 2.2rem;
-            margin-bottom: 20px;
-        }
-        
-        .text-block p {
-            color: var(--color-text-muted);
-            font-size: 1.05rem;
-        }
-
-        /* Reviews Grid */
-        .reviews-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .review-card {
-            background: #fff;
-            padding: 50px 40px;
-            border-radius: 2px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.02);
-            text-align: left;
-        }
-        
-        .stars {
-            color: var(--color-accent);
-            font-size: 1.2rem;
-            letter-spacing: 0.1em;
-            margin-bottom: 20px;
-        }
-        
-        .review-card p {
-            font-family: var(--font-heading);
-            font-size: 1.1rem;
-            font-style: italic;
-            color: var(--color-text-muted);
-            margin-bottom: 30px;
-            line-height: 1.8;
-        }
-        
-        .review-card h4 {
-            font-family: var(--font-body);
-            font-weight: 500;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-        }
-        
-        .trust-badge {
-            display: inline-block;
-            margin-top: 40px;
-            padding: 10px 20px;
-            border: 1px solid var(--color-text-muted);
-            color: var(--color-darker);
-            text-decoration: none;
-            font-size: 0.85rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            transition: all 0.3s ease;
-        }
-
-        .trust-badge:hover {
-            background-color: var(--color-darker);
-            color: var(--color-light);
-        }
-
-        /* Map */
-        .map-container {
-            width: 100%;
-            height: 500px;
-            margin-top: 60px;
-            border-radius: 2px;
-            overflow: hidden;
-            background-color: #eaeaea;
-        }
-        
-        .map-container iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            filter: grayscale(100%) contrast(1.1);
-        }
-
-        /* FAQ */
-        .faq-section {
-            padding: 120px 5%;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .faq-header {
-            text-align: center;
-            margin-bottom: 70px;
-        }
-        
-        .faq-header h2 {
-            font-size: 2.8rem;
-            margin-bottom: 20px;
-        }
-        
-        .faq-item {
-            border-bottom: 1px solid #e0e0e0;
-            padding: 30px 0;
-        }
-        
-        .faq-question {
-            font-size: 1.15rem;
-            font-weight: 500;
-            color: var(--color-darker);
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: color 0.3s ease;
-            background: none;
-            border: none;
-            width: 100%;
-            text-align: left;
-            font-family: inherit;
-        }
-        
-        .faq-question:hover {
-            color: var(--color-text-muted);
-        }
-        
-        .faq-question::after {
-            content: '+';
-            font-size: 1.5rem;
-            font-weight: 300;
-            transition: transform 0.3s ease;
-        }
-        
-        .faq-item.active .faq-question::after {
-            transform: rotate(45deg);
-        }
-        
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.4s ease, padding 0.4s ease;
-        }
-        
-        .faq-item.active .faq-answer {
-            max-height: 500px; 
-            padding-top: 25px;
-        }
-        
-        .faq-answer p {
-            font-size: 1.05rem;
-            color: var(--color-text-muted);
-            line-height: 1.7;
-        }
-
-        /* Instagram */
-        .instagram-section {
-            background-color: var(--color-light);
-            padding: 100px 5%;
-            text-align: center;
-        }
-        
-        .instagram-section h2 {
-            font-size: 2.8rem;
-            margin-bottom: 15px;
-        }
-        
-        .insta-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
-            max-width: 1400px;
-            margin: 50px auto;
-        }
-        
-        .insta-post {
-            background-color: #ddd;
-            aspect-ratio: 1 / 1;
-            width: 100%;
-            object-fit: cover;
-        }
-        
-        .btn-outline {
-            display: inline-block;
-            border: 1px solid var(--color-dark);
-            color: var(--color-dark);
-            padding: 12px 35px;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            font-size: 0.8rem;
-            font-weight: 500;
-            transition: all 0.4s ease;
-            margin-top: 20px;
-        }
-        
-        .btn-outline:hover {
-            background-color: var(--color-dark);
-            color: var(--color-light);
-        }
-
-        /* Retreat Banner */
-        .retreat-section {
-            background-color: var(--color-dark);
-            color: var(--color-light);
-            padding: 160px 5%;
-            text-align: center;
-        }
-        
-        .retreat-section h2 {
-            color: var(--color-light);
-            font-size: 3.2rem;
-            margin-bottom: 25px;
-        }
-        
-        .retreat-section p {
-            max-width: 700px;
-            margin: 0 auto 40px auto;
-            color: #999;
-            font-size: 1.1rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            border: 1px solid var(--color-light);
-            color: var(--color-light);
-            padding: 15px 45px;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            font-size: 0.85rem;
-            transition: all 0.4s ease;
-        }
-        
-        .btn:hover {
-            background-color: var(--color-light);
-            color: var(--color-dark);
-        }
-        
-        /* Footer */
-        .footer {
-            background-color: var(--color-darker);
-            color: var(--color-light);
-            padding: 80px 5%;
-            text-align: center;
-        }
-        
-        .footer h3 {
-            color: var(--color-light);
-            margin-bottom: 20px;
-            font-size: 1.5rem;
-        }
-        
-        .footer p {
-            color: #888;
-            margin-bottom: 10px;
-        }
-        
-        .footer a {
-            color: #ccc;
-            text-decoration: none;
-            transition: color 0.3s ease;
-            letter-spacing: 0.05em;
-        }
-        
-        .footer a:hover {
-            color: #fff;
-        }
-
-        /* Responsive Breakpoints */
-        @media (max-width: 900px) {
-            .amenities-grid {
-                grid-template-columns: 1fr;
-                gap: 50px;
-                padding: 0;
-            }
-            .editorial-grid { 
-                grid-template-columns: 1fr; 
-                gap: 50px; 
-                margin-top: 80px; 
-            }
-            .insta-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .hero h1 .nema-text { font-size: 5rem; }
-            .hero h1 .uluwatu-text { font-size: 1.1rem; }
-            .section { padding: 80px 5%; }
-            .image-block { height: 450px; }
-            .navbar { flex-direction: column; gap: 20px; padding: 20px 5%; }
-            .map-container { height: 400px; }
-            .retreat-section { padding: 100px 5%; }
-        }
-    </style>
 </head>
 <body>
 
     <nav class="navbar">
-        <a href="#" class="nav-logo">
+        <a href="#" class="nav-logo" aria-label="Nema Uluwatu Home">
             <span class="nema-text">Nema.</span><br>
             <span class="uluwatu-text">Uluwatu</span>
         </a>
@@ -577,15 +84,15 @@
     </nav>
 
     <main>
-        <div class="hero">
+        <header class="hero">
             <h1 style="opacity: 0.85;">
                 <span class="nema-text">Nema.</span><br>
                 <span class="uluwatu-text">Uluwatu</span>
             </h1>
             <p>The privacy of an exclusive retreat. The refined luxury of a boutique hotel.</p>
-        </div>
+        </header>
 
-        <div class="section text-center">
+        <section class="section text-center">
             <h2 class="section-title">An Intimate Escape</h2>
             <p class="lead-text">Designed for the modern traveler who seeks both connection and quietude. Retreat to the absolute privacy of your sunlit studio, or engage with a curated community by our 16m pool. Nema is an effortless sanctuary in a space that feels entirely your own.</p>
             
@@ -603,11 +110,11 @@
                     <p>Breathe easy in a sanctuary that is entirely yours. We provide discrete, 24-hour on-site security to ensure a profoundly safe, serene environment and uncompromising peace of mind.</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="section" style="padding-top: 0;">
+        <section class="section" style="padding-top: 0;">
             <div class="editorial-grid">
-                <img src="images/drone.png" alt="Aerial view of Nema. Uluwatu" class="image-block" loading="lazy">
+                <img src="images/drone.png" alt="Aerial view of Nema. Uluwatu" class="image-block" width="800" height="650" loading="lazy">
                 <div class="text-block">
                     <h3>Perfectly Positioned</h3>
                     <p>Just a few-minute stroll to the white sands of Thomas Beach, placing Uluwatu’s renowned culinary scene, elevated cafes, and legendary clifftop venues at your doorstep.</p>
@@ -615,7 +122,7 @@
             </div>
 
             <div class="editorial-grid" style="direction: rtl;">
-                <img src="images/studio.png" alt="Sunlit Work Nook" class="image-block" loading="lazy">
+                <img src="images/studio.png" alt="Sunlit Work Nook" class="image-block" width="800" height="650" loading="lazy">
                 <div class="text-block" style="direction: ltr;">
                     <h3>Curated for Creatives</h3>
                     <p>Where inspiration meets tranquility. Each of our 12 studios features a dedicated, sunlit alcove—designed for those who demand high aesthetic standards alongside seamless productivity.</p>
@@ -623,7 +130,7 @@
             </div>
             
             <div class="editorial-grid">
-                <img src="images/bed.jpg" alt="Premium Queen Bed at Nema Uluwatu" class="image-block" loading="lazy">
+                <img src="images/bed.jpg" alt="Premium Queen Bed at Nema Uluwatu" class="image-block" width="800" height="650" loading="lazy">
                 <div class="text-block">
                     <h3>A Restorative Sanctuary</h3>
                     <p>Sink into supreme comfort. Our studio suites feature premium queen-sized beds draped in high-thread-count linens, designed to provide deeply restorative sleep after a day in the Bali sun.</p>
@@ -631,7 +138,7 @@
             </div>
 
             <div class="editorial-grid" style="direction: rtl;">
-                <img src="images/robe.jpg" alt="Boutique desk and bespoke robe styling" class="image-block" loading="lazy">
+                <img src="images/robe.jpg" alt="Boutique desk and bespoke robe styling" class="image-block" width="800" height="650" loading="lazy">
                 <div class="text-block" style="direction: ltr;">
                     <h3>Tactile Elegance</h3>
                     <p>Every element is chosen with intention. From the bespoke robes waiting in your suite to the carefully curated desk aesthetic, experience a tactile richness that turns simple moments into rituals.</p>
@@ -639,15 +146,15 @@
             </div>
 
             <div class="editorial-grid">
-                <img src="images/bath.png" alt="Luxurious Tropical Outdoor Bathroom at Nema. Uluwatu" class="image-block" loading="lazy">
+                <img src="images/bath.png" alt="Luxurious Tropical Outdoor Bathroom at Nema. Uluwatu" class="image-block" width="800" height="650" loading="lazy">
                 <div class="text-block">
                     <h3>Tropical Outdoor Living</h3>
                     <p>The essence of Balinese luxury. Our signature outdoor bathrooms harmonize complete privacy with the raw beauty of nature, allowing you to shower under the tropical sun or evening stars in natural, mineral-enriched groundwater.</p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="section bg-light text-center">
+        <section class="section bg-light text-center">
             <h2 class="section-title">The Nema Experience</h2>
             <p class="lead-text" style="margin-bottom: 60px;">Reflections from those who have made Nema their Uluwatu sanctuary.</p>
             
@@ -672,9 +179,9 @@
             <a href="https://www.google.com/maps/place/Nema.+Uluwatu/@-8.8180936,115.094355,17z/data=!4m11!3m10!1s0x2dd2450984ae7601:0x4ec79eb32ef51e23!5m4!1s2026-08-14!2i2!4m1!1i2!8m2!3d-8.8180936!4d115.0969299!16s%2Fg%2F11x31xxytr?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="trust-badge">
                 Rated 5-Stars Based on 164 Google Reviews
             </a>
-        </div>
+        </section>
 
-        <div class="section">
+        <section class="section">
             <h2 class="section-title text-center">Your Uluwatu Sanctuary</h2>
             <div class="text-center">
                 <p class="lead-text"><strong>Nema. Uluwatu</strong><br>53JW+VRQ, Pecatu, South Kuta, Badung Regency, Bali 80361, Indonesia</p>
@@ -682,7 +189,7 @@
             <div class="map-container">
                 <iframe src="https://maps.google.com/maps?q=-8.817868,115.097039&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Maps Location for Nema Uluwatu"></iframe>
             </div>
-        </div>
+        </section>
 
         <section class="faq-section">
             <div class="faq-header">
@@ -724,20 +231,20 @@
             <p class="lead-text">A glimpse into life at Nema. Share your sanctuary with us.</p>
             
             <div class="insta-grid">
-                <img src="images/insta1.png" alt="Nema. Uluwatu Lifestyle" class="insta-post" loading="lazy">
-                <img src="images/insta2.png" alt="Nema. Uluwatu Architecture" class="insta-post" loading="lazy">
-                <img src="images/insta3.png" alt="Nema. Uluwatu Interiors" class="insta-post" loading="lazy">
-                <img src="images/insta4.png" alt="Nema. Uluwatu Pool" class="insta-post" loading="lazy">
+                <img src="images/insta1.png" alt="Nema. Uluwatu Lifestyle" class="insta-post" width="600" height="600" loading="lazy">
+                <img src="images/insta2.png" alt="Nema. Uluwatu Architecture" class="insta-post" width="600" height="600" loading="lazy">
+                <img src="images/insta3.png" alt="Nema. Uluwatu Interiors" class="insta-post" width="600" height="600" loading="lazy">
+                <img src="images/insta4.png" alt="Nema. Uluwatu Pool" class="insta-post" width="600" height="600" loading="lazy">
             </div>
 
             <a href="https://www.instagram.com/nemauluwatu/" target="_blank" rel="noopener noreferrer" class="btn-outline">@nemauluwatu</a>
         </section>
 
-        <div class="retreat-section">
-            <h2>An Exclusive Canvas</h2>
-            <p>Seeking a venue for a wellness retreat, creative offsite, or private gathering? Secure the entire 12-studio property and transform Nema into your own private estate.</p>
-            <a href="mailto:nemauluwatu@gmail.com?subject=Retreat%20Inquiry" class="btn">Inquire About A Retreat</a>
-        </div>
+        <section class="retreat-section">
+            <h2>Host Your Retreat</h2>
+            <p>Designed explicitly for yoga, health, and wellness facilitators. Secure the entire 12-studio property to provide your guests with a profoundly private, premium sanctuary in the heart of Uluwatu.</p>
+            <a href="mailto:nemauluwatu@gmail.com?subject=Yoga%20Retreat%20Inquiry" class="btn">Inquire About Hosting</a>
+        </section>
     </main>
     
     <footer class="footer">
