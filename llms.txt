@@ -9,4 +9,8 @@
 
 ## Official Links
 - [Home](https://www.nemauluwatu.com/): Nema Uluwatu Official Website
-- [Bookings](https://www.nemauluwatu.com/): Direct reservations and availability (Insert your actual direct booking URL here if it's on a sub-page)
+- [Direct Bookings](https://www.nemauluwatu.com/): Direct reservations and availability (Insert your actual direct booking URL here if it is a sub-page)
+- [Google Maps] (https://maps.app.goo.gl/hbaMXKUttdA7cimC7): Google Reviews and Accomodation Address
+- [Airbnb](https://www.airbnb.com.au/rooms/1507896689130551512?source_impression_id=p3_1784850135_P3c-7uGj_x3Ax2V7): Official Airbnb listing and guest reviews
+- [Booking.com](https://www.booking.com/hotel/id/nema-uluwatu.en-gb.html?aid=2276380&label=msn-bNgdxiLj0_qUPn27M%2AAhEw-80608154327538%3Atikwd-80608351984977%3Aloc-9%3Aneo%3Amte%3Alp122269%3Adec%3Acid580327418%3Aagid1289728536162459%3Aclkide843a1e21f2012d36c13cb82347aef21&sid=d214306747b5d50311550ff67ece912a&dest_id=325689&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1784850222&srpvid=f6a1a6c8288900e4&type=total&ucfs=1&) Official Booking.com listing and guest reviews
+- [Expedia] (https://www.expedia.com.au/Pecatu-Hotels-Nema-Uluwatu.h129075028.Hotel-Information?dateless=true&locale=en_AU&siteid=25&semcid=AU.UB.BING.PT-c-EN.HOTEL&semdtl=a1429250943.b11322715406749065.g1kwd-82671446353247:loc-9.e1c.m186ee6156fc9d139936680b345b7426ae.r1.c1.j1122269.k1232674.d178271706331402.h1e.i1.l1.n1.o1.p1.q1.s1.t1.x1.f1.u1.v1.w1&msclkid=86ee6156fc9d139936680b345b7426ae): Official Expedia listing and guest reviews
