@@ -491,3 +491,21 @@ h2, h3, h4 {
     .map-container { height: 400px; }
     .retreat-section { padding: 100px 5%; }
 }
+
+.editorial-grid {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    gap: 40px; /* Space between image and text */
+}
+
+/* This safely flips the layout for the alternating rows */
+.editorial-grid.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Ensure it stacks properly on mobile phones */
+@media (max-width: 768px) {
+    .editorial-grid, .editorial-grid.reverse {
+        flex-direction: column;
+    }
+}
