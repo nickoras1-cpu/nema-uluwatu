@@ -592,6 +592,7 @@ h1, h2, h3, h4 {
 .article-body li + li { margin-top: 10px; }
 .article-body a:not(.text-link) { color: var(--color-darker); text-underline-offset: 3px; }
 .article-body strong { color: var(--color-darker); font-weight: 600; }
+.article-body > h3 { font-size: 1.5rem; margin: 40px 0 14px; }
 
 .toc { padding: 26px 30px; background: var(--color-bg-alt); margin-bottom: 8px; }
 .toc .eyebrow { margin-bottom: 12px; }
@@ -629,6 +630,29 @@ h1, h2, h3, h4 {
 @media (max-width: 900px) {
     .journal-grid, .journal-grid.two { grid-template-columns: 1fr; }
     .journal-card img { aspect-ratio: 4 / 3; }
+}
+
+/* ---------- Alone, together / team / value ---------- */
+.feature-split { display: grid; grid-template-columns: 6fr 5fr; gap: clamp(40px, 7vw, 120px); align-items: center; max-width: var(--max); margin: 0 auto; }
+.feature-split p { color: var(--color-text-muted); max-width: 34em; }
+.feature-split p + p { margin-top: 1em; }
+.feature-split .text-link { display: inline-block; margin-top: 30px; color: var(--color-darker); }
+.feature-split img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+
+.team-quotes { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(28px, 4vw, 64px); margin-top: clamp(44px, 5vw, 72px); text-align: left; }
+.team-quotes li { padding-top: 24px; border-top: 1px solid var(--color-dark); }
+.team-quotes p { font-family: var(--font-heading); font-style: italic; font-size: 1.25rem; line-height: 1.55; color: var(--color-darker); }
+.team-quotes span { display: block; margin-top: 16px; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-text-muted); }
+
+.value-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 3vw, 40px); max-width: 1040px; margin: clamp(44px, 5vw, 72px) auto 0; }
+.value-card { padding: clamp(32px, 4vw, 52px); background: var(--color-bg-alt); display: flex; flex-direction: column; }
+.value-card h3 { font-size: clamp(1.6rem, 2.4vw, 2rem); margin-bottom: 14px; }
+.value-card p { color: var(--color-text-muted); margin-bottom: 26px; }
+.value-card .text-link { margin-top: auto; align-self: flex-start; color: var(--color-darker); }
+
+@media (max-width: 900px) {
+    .feature-split, .team-quotes, .value-grid { grid-template-columns: 1fr; }
+    .feature-split img { aspect-ratio: 4 / 3; }
 }
 
 /* ---------- Responsive ---------- */
