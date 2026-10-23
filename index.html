@@ -30,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
 
     <script type="application/ld+json">
     {
@@ -51,6 +51,9 @@
       "email": "nemauluwatu@gmail.com",
       "priceRange": "$$$",
       "numberOfRooms": 12,
+      "checkinTime": "14:00",
+      "checkoutTime": "11:00",
+      "petsAllowed": false,
       "knowsLanguage": ["English", "German", "French", "Dutch", "Spanish", "Italian"],
       "address": {
         "@type": "PostalAddress",
@@ -97,7 +100,11 @@
         {"@type": "LocationFeatureSpecification", "name": "50mbps Fiber-Optic Wi-Fi", "value": "True"},
         {"@type": "LocationFeatureSpecification", "name": "16m Communal Swimming Pool", "value": "True"},
         {"@type": "LocationFeatureSpecification", "name": "Private Outdoor Bathroom", "value": "True"},
-        {"@type": "LocationFeatureSpecification", "name": "Dedicated Work Nook in Every Studio", "value": "True"}
+        {"@type": "LocationFeatureSpecification", "name": "Dedicated Work Nook in Every Studio", "value": "True"},
+        {"@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": "True"},
+        {"@type": "LocationFeatureSpecification", "name": "24-Hour Front Desk", "value": "True"},
+        {"@type": "LocationFeatureSpecification", "name": "Daily Housekeeping", "value": "True"},
+        {"@type": "LocationFeatureSpecification", "name": "Free Private Parking", "value": "True"}
       ]
     }
     </script>
@@ -166,6 +173,7 @@
                 <source type="image/webp" srcset="images/splash.webp">
                 <img src="images/splash.png" alt="The beach-ledge pool and garden studios at Nema. Uluwatu" width="1015" height="673" fetchpriority="high">
             </picture>
+            <span class="eyebrow hero-eyebrow">Twelve Private Studios · Uluwatu, Bali</span>
             <h1 id="hero-title">
                 <span class="nema-text">Nema.</span>
                 <span class="uluwatu-text">Uluwatu</span>
@@ -183,15 +191,15 @@
                 <h2 class="section-title" id="escape-title">An Intimate Escape</h2>
                 <p class="lead-text">Designed for the modern traveler who seeks both connection and quietude. Retreat to the absolute privacy of your sunlit studio, or engage with a curated community by our 16m pool. Nema is an effortless sanctuary in a space that feels entirely your own.</p>
 
-                <dl class="facts">
+                <dl class="facts reveal">
                     <div class="fact"><dt>12</dt><dd>Private studios</dd></div>
                     <div class="fact"><dt>16m</dt><dd>Beach-ledge pool</dd></div>
-                    <div class="fact"><dt>Minutes</dt><dd>On foot to Thomas Beach</dd></div>
+                    <div class="fact"><dt>9.8</dt><dd>Guest rating on Booking.com</dd></div>
                     <div class="fact"><dt>50mbps</dt><dd>Fiber-optic Wi&#8209;Fi</dd></div>
                     <div class="fact"><dt>24/7</dt><dd>Discrete security</dd></div>
                 </dl>
 
-                <div class="amenities-grid">
+                <div class="amenities-grid reveal">
                     <div class="amenity-card">
                         <h3>The Beach-Ledge Pool</h3>
                         <p>An expansive, sun-drenched pool featuring a shallow beach-style ledge. The perfect architectural backdrop for restorative mornings and effortless afternoon connection.</p>
@@ -208,8 +216,12 @@
             </div>
         </section>
 
+        <section class="manifesto" aria-label="The Nema philosophy">
+            <p class="reveal">Twelve studios. One pool.<br><em>Nowhere you need to be.</em></p>
+        </section>
+
         <section class="section editorial" aria-label="The Nema experience in five parts">
-            <article class="editorial-grid">
+            <article class="reveal editorial-grid">
                 <picture class="image-block">
                     <source type="image/webp" srcset="images/drone.webp">
                     <img src="images/drone.png" alt="Aerial view of Nema. Uluwatu's twelve studios around the pool, with the ocean beyond" width="668" height="886" loading="lazy" decoding="async">
@@ -222,7 +234,7 @@
                 </div>
             </article>
 
-            <article class="editorial-grid reverse">
+            <article class="reveal editorial-grid reverse">
                 <picture class="image-block">
                     <source type="image/webp" srcset="images/studio.webp">
                     <img src="images/studio.png" alt="A sunlit studio terrace with a built-in daybed beneath a timber awning" width="703" height="885" loading="lazy" decoding="async">
@@ -235,7 +247,7 @@
                 </div>
             </article>
 
-            <article class="editorial-grid">
+            <article class="reveal editorial-grid">
                 <picture class="image-block">
                     <source type="image/webp" srcset="images/bed.webp">
                     <img src="images/bed.jpg" alt="Queen-sized bed with white linens and a timber bench in a Nema studio" width="1024" height="1280" loading="lazy" decoding="async">
@@ -247,7 +259,7 @@
                 </div>
             </article>
 
-            <article class="editorial-grid reverse">
+            <article class="reveal editorial-grid reverse">
                 <picture class="image-block">
                     <source type="image/webp" srcset="images/robe.webp">
                     <img src="images/robe.jpg" alt="Studio vanity, open wardrobe and timber desk in warm natural light" width="960" height="1280" loading="lazy" decoding="async">
@@ -259,7 +271,7 @@
                 </div>
             </article>
 
-            <article class="editorial-grid">
+            <article class="reveal editorial-grid">
                 <picture class="image-block">
                     <source type="image/webp" srcset="images/bath.webp">
                     <img src="images/bath.png" alt="Private outdoor bathroom with rain shower, stone basin and tropical planting" width="660" height="893" loading="lazy" decoding="async">
@@ -272,32 +284,61 @@
             </article>
         </section>
 
+        <section class="section day-section" aria-labelledby="day-title">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="eyebrow">A Day at Nema</span>
+                    <h2 class="section-title" id="day-title">Slow mornings, golden evenings</h2>
+                </div>
+                <ol class="day-timeline reveal">
+                    <li><time>7:00</time><h3>Sand before breakfast</h3><p>A short walk down the local pathway to Thomas Beach for an early swim in clear turquoise water.</p></li>
+                    <li><time>9:00</time><h3>Coffee, then focus</h3><p>Brunch at Suka Espresso, three minutes on foot, then your sunlit work nook and 50mbps fiber Wi&#8209;Fi.</p></li>
+                    <li><time>14:00</time><h3>The pool, or the surf</h3><p>Float on the beach ledge of the 16m pool, or ride three minutes to the waves at Padang Padang.</p></li>
+                    <li><time>18:00</time><h3>Sunset on the cliffs</h3><p>Live music at Single Fin, four minutes away, or the Kecak fire dance at Uluwatu Temple.</p></li>
+                    <li><time>22:00</time><h3>A gentle hush</h3><p>Back through the gate, Uluwatu's bustle falls away. Blackout curtains, cool linen, deep sleep.</p></li>
+                </ol>
+            </div>
+        </section>
+
         <section class="section bg-light text-center" aria-labelledby="reviews-title">
             <span class="eyebrow">Guest Reflections</span>
             <h2 class="section-title" id="reviews-title">The Nema Experience</h2>
-            <p class="lead-text">Reflections from those who have made Nema their Uluwatu sanctuary.</p>
 
-            <div class="reviews-grid">
+            <ul class="ratings-band reveal" aria-label="Guest ratings">
+                <li><strong>9.8</strong><span>Exceptional · Booking.com<br>166 reviews</span></li>
+                <li><strong>5.0</strong><span>Google<br>164 reviews</span></li>
+                <li><strong>9.9</strong><span>Location &amp; staff<br>Booking.com</span></li>
+            </ul>
+
+            <figure class="featured-quote reveal">
+                <blockquote><p>“Absolutely stunning. A beautiful little sanctuary, such a relaxed vibe with complete attention to detail.”</p></blockquote>
+                <figcaption>Kirran, Australia · Booking.com</figcaption>
+            </figure>
+
+            <div class="reviews-grid reveal">
                 <figure class="review-card">
                     <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-                    <blockquote><p>“Easily my favourite accommodation I’ve stayed at in Bali. The location is perfect, the rooms are spotless, and the whole place is beautifully designed. The owner goes above and beyond to make sure you’re comfortable and has been incredibly accommodating throughout my stay. The staff are all so warm and friendly. I couldn’t recommend this place more and will absolutely be back.”</p></blockquote>
-                    <figcaption>Christina M. · July 2026</figcaption>
+                    <blockquote><p>“Easily my favourite accommodation I’ve stayed at in Bali. The location is perfect, the rooms are spotless, and the whole place is beautifully designed. The staff are all so warm and friendly. I couldn’t recommend this place more and will absolutely be back.”</p></blockquote>
+                    <figcaption>Christina M. · Google</figcaption>
                 </figure>
                 <figure class="review-card">
                     <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-                    <blockquote><p>“Really loved my stay at Nema. A small lovely boutique hotel that feels like a hidden gem. The staff were great and the location very convenient and safe for a solo, female first time traveler to Bali. I’ll definitely be coming back.”</p></blockquote>
-                    <figcaption>Carol W. · July 2026</figcaption>
+                    <blockquote><p>“A small lovely boutique hotel that feels like a hidden gem. The staff were great and the location very convenient and safe for a solo, female first time traveler to Bali. I’ll definitely be coming back.”</p></blockquote>
+                    <figcaption>Carol W. · Google</figcaption>
                 </figure>
                 <figure class="review-card">
                     <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-                    <blockquote><p>“Amazing place to stay! The decor is beautiful, the rooms are stunning and the shower had incredible water pressure. The pool was so relaxing and everything was kept spotless throughout our stay. The staff were always polite, welcoming and friendly. We had a wonderful experience and would definitely stay here again.”</p></blockquote>
-                    <figcaption>Bonnie E. · July 2026</figcaption>
+                    <blockquote><p>“This place is amazing. There’s only 12 rooms surrounding a communal pool. The rooms are quiet and comfortable and the pool is never busy.”</p></blockquote>
+                    <figcaption>Ashleigh, New Zealand · Booking.com</figcaption>
                 </figure>
             </div>
 
-            <a href="https://maps.app.goo.gl/hbaMXKUttdA7cimC7" target="_blank" rel="noopener noreferrer" class="trust-badge">
-                <span class="stars" aria-hidden="true">★★★★★</span> Rated 5-Stars Based on 164 Google Reviews
-            </a>
+            <div class="review-links">
+                <a href="https://maps.app.goo.gl/hbaMXKUttdA7cimC7" target="_blank" rel="noopener noreferrer" class="trust-badge">
+                    <span class="stars" aria-hidden="true">★★★★★</span> Rated 5-Stars Based on 164 Google Reviews
+                </a>
+                <a href="https://www.booking.com/hotel/id/nema-uluwatu.en-gb.html" target="_blank" rel="noopener noreferrer" class="trust-badge">9.8 Exceptional on Booking.com</a>
+            </div>
         </section>
 
         <section class="section" aria-labelledby="location-title">
@@ -378,6 +419,7 @@
                     <span class="eyebrow">Exclusive Property Reservation</span>
                     <h2 id="retreat-title">Host Your Retreat</h2>
                     <p>Designed explicitly for yoga, health, and wellness facilitators. Secure the entire 12-studio property to provide your guests with a profoundly private, premium sanctuary in the heart of Uluwatu.</p>
+                    <p>Twelve queen studios for 12 to 24 guests. Practise on the pool deck, or under cover when it rains. You bring the programme; we provide the sanctuary.</p>
                     <div class="actions">
                         <a href="mailto:nemauluwatu@gmail.com?subject=Yoga%20Retreat%20Inquiry" class="btn">Inquire About Hosting</a>
                         <a href="retreats/" class="text-link">Retreat details</a>
@@ -417,6 +459,6 @@
         <a href="https://wa.me/6281337349684?text=Hi%20Nema%2C%20I%27d%20like%20to%20check%20availability%20for%20my%20stay." target="_blank" rel="noopener noreferrer" class="btn-solid">Reserve Direct via WhatsApp</a>
     </div>
 
-    <script src="main.js" defer></script>
+    <script src="main.js?v=2" defer></script>
 </body>
 </html>
