@@ -686,6 +686,28 @@ h1, h2, h3, h4 {
 @media (max-width: 900px) { .food-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .food-grid { grid-template-columns: 1fr; } .keyring-badge { display: block; width: max-content; margin: 0 auto 10px; } }
 
+/* ---------- Video ---------- */
+.hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; opacity: 0; transition: opacity 1.2s ease; }
+.hero-video.is-playing { opacity: 1; }
+.media-video video { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; background: #e8e4de; }
+.video-band { position: relative; background: var(--color-dark); color: var(--color-light); }
+.video-band-media video { display: block; width: 100%; aspect-ratio: 16 / 9; max-height: 82vh; object-fit: cover; }
+.video-band-caption { max-width: 640px; margin: 0 auto; padding: clamp(40px, 6vw, 72px) var(--gutter); text-align: center; }
+.video-band-caption .eyebrow { color: #9a9a9a; }
+.video-band-caption h2 { color: var(--color-light); font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 16px; }
+.video-band-caption p { color: #b0b0b0; }
+.inline-figure { margin-top: 28px; }
+.inline-figure img { width: 100%; height: auto; }
+.inline-figure figcaption { margin-top: 10px; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-text-muted); }
+@media (max-width: 900px) { .media-video video { aspect-ratio: 4 / 4.6; } }
+
+/* ---------- Co-branded mats ---------- */
+.mat-figure svg { display: block; width: 100%; height: auto; }
+.mat-figure figcaption { margin-top: 12px; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-text-muted); }
+.mat-section .feature-split p { color: var(--color-text-muted); }
+.mat-section .feature-split p + p { margin-top: 1em; }
+.mat-actions { margin-top: 32px; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
     .facts { grid-template-columns: repeat(3, 1fr); }
@@ -756,3 +778,4 @@ h1, h2, h3, h4 {
     .nav-links a { font-size: 0.68rem; letter-spacing: 0.12em; }
     .navbar .btn-book { padding: 0 18px; letter-spacing: 0.12em; }
 }
+.retreat-section .feature-split .text-link { color: var(--color-light); }
