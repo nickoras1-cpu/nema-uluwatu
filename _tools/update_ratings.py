@@ -19,17 +19,23 @@ data = json.loads((TOOLS / 'ratings.json').read_text(encoding='utf-8'))
 span = re.compile(r'(<span data-r="([a-z_]+)">)([^<]*)(</span>)')
 meta = re.compile(r'rated [0-9.]+ on Booking\.com')
 
+COMMA_LANGS = ('de', 'fr', 'nl')  # these pages write 9,8 rather than 9.8
+
 changed = []
 for page in ROOT.rglob('*.html'):
     if any(part.startswith(('_', '.')) for part in page.relative_to(ROOT).parts):
         continue
     text = page.read_text(encoding='utf-8')
+    comma = page.relative_to(ROOT).parts[0] in COMMA_LANGS
 
     def fill(m):
         key = m.group(2)
         if key not in data:
             sys.exit(f'Unknown rating key "{key}" in {page}')
-        return m.group(1) + data[key] + m.group(4)
+        value = data[key]
+        if comma and re.fullmatch(r'\d+\.\d+', value):
+            value = value.replace('.', ',')
+        return m.group(1) + value + m.group(4)
 
     new = span.sub(fill, text)
     new = meta.sub(f'rated {data["booking_score"]} on Booking.com', new)
