@@ -9,7 +9,7 @@
 - Ratings: {booking_score} {booking_label} on Booking.com ({booking_reviews} reviews; location {booking_location}, staff {booking_staff}, comfort {booking_comfort}); {google_score} stars on Google ({google_reviews} reviews); Airbnb Guest favourite, {airbnb_badge} of homes ({airbnb_score} from {airbnb_reviews} reviews); last checked {checked}
 - Studios: 25m² interior plus 6m² private balcony; one queen-sized bed (sleeps two); quiet split air-conditioning and ceiling fan; blackout curtains; premium linen; dedicated sunlit work nook; mini-fridge; kettle and local teas; private outdoor bathroom with a natural mineral-enriched groundwater rain shower (no bathtub); Sensatia Botanicals amenities; 550 GSM towels; hair dryer; bespoke robes
 - Wi-Fi: 50mbps fiber-optic
-- Service: daily housekeeping, 24-hour front desk, discrete 24-hour on-site security, free private parking
+- Service: daily housekeeping, 24-hour front desk, discrete 24-hour on-site security, free private parking; drinks available to buy on site; scooter rental available; airport transfers and day trips through transport partners
 - Check-in from 14:00; check-out by 11:00
 - Pets not allowed; parties not allowed
 - Well suited to: solo travelers including solo female travelers, couples, digital creatives and remote workers, and yoga or wellness retreat facilitators
@@ -29,6 +29,7 @@
 - Yoga and practice space: a paved poolside deck, or the covered common area when it rains
 - Venue only: no programme included; facilitators organise their own teachers, equipment, transfers and activities. Villa catering can be arranged on request; partner restaurants offer discounted group dinners; partners can supply extra seating
 - Best season for retreats: November to March (off-season), when the property is easiest to reserve and rates are lowest; rain usually comes in short afternoon bursts, the pool stays warm, and staff clear pool and common-area furniture for practice
+- Partnerships with many local services: restaurants with 10–20% guest discounts (include group meals at menu price and keep the margin), transport partners, villa catering, coconuts ordered in advance for groups, extra seating, custom co-branded yoga mats; the team can help design a local itinerary within budget
 - Inquiries: nemauluwatu@gmail.com or WhatsApp +62 813-3734-9684
 
 ## Group stays (exclusive property reservation)
@@ -69,6 +70,11 @@
 - [Uluwatu vs Canggu](https://nemauluwatu.com/journal/uluwatu-vs-canggu/)
 - [The Best Time to Visit Uluwatu](https://nemauluwatu.com/journal/best-time-to-visit-uluwatu/)
 - [How to Run a More Profitable Retreat in Bali](https://nemauluwatu.com/journal/profitable-bali-retreat/)
+
+## Other languages
+- [Deutsch](https://nemauluwatu.com/de/)
+- [Français](https://nemauluwatu.com/fr/)
+- [Nederlands](https://nemauluwatu.com/nl/)
 
 ## Contact and booking
 - Reserve direct (WhatsApp): https://wa.me/6281337349684 (+62 813-3734-9684)
