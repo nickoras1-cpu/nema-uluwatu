@@ -60,6 +60,54 @@
         });
     }
 
+    // Gallery: filters and photo viewer
+    var gallery = document.querySelector('.g-grid');
+    if (gallery) {
+        var items = Array.prototype.slice.call(gallery.querySelectorAll('.g-item'));
+        document.querySelectorAll('.g-chip').forEach(function (chip) {
+            chip.addEventListener('click', function () {
+                var f = chip.dataset.filter;
+                document.querySelectorAll('.g-chip').forEach(function (c) { c.setAttribute('aria-pressed', String(c === chip)); });
+                items.forEach(function (it) { it.hidden = !(f === 'all' || it.dataset.cat === f); });
+            });
+        });
+        var lb = document.querySelector('.lightbox');
+        if (lb && lb.showModal) {
+            var lbImg = lb.querySelector('img'), lbCap = lb.querySelector('figcaption'), current = 0, opener = null;
+            var visible = function () { return Array.prototype.slice.call(gallery.querySelectorAll('.g-item:not([hidden]) .g-open')); };
+            var show = function (i) {
+                var list = visible();
+                current = (i + list.length) % list.length;
+                var b = list[current];
+                lbImg.src = b.dataset.large; lbImg.alt = b.dataset.caption; lbCap.textContent = b.dataset.caption;
+            };
+            gallery.addEventListener('click', function (e) {
+                var b = e.target.closest('.g-open');
+                if (!b) return;
+                opener = b;
+                show(visible().indexOf(b));
+                lb.showModal();
+            });
+            lb.querySelector('.lb-close').addEventListener('click', function () { lb.close(); });
+            lb.querySelector('.lb-prev').addEventListener('click', function () { show(current - 1); });
+            lb.querySelector('.lb-next').addEventListener('click', function () { show(current + 1); });
+            lb.addEventListener('click', function (e) { if (e.target === lb) lb.close(); });
+            lb.addEventListener('close', function () { if (opener) opener.focus(); });
+            lb.addEventListener('keydown', function (e) {
+                if (e.key === 'ArrowLeft') show(current - 1);
+                if (e.key === 'ArrowRight') show(current + 1);
+            });
+            var x0 = null;
+            lb.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+            lb.addEventListener('touchend', function (e) {
+                if (x0 === null) return;
+                var dx = e.changedTouches[0].clientX - x0;
+                if (Math.abs(dx) > 40) show(current + (dx < 0 ? 1 : -1));
+                x0 = null;
+            });
+        }
+    }
+
     // Mobile menu
     var toggle = document.querySelector('.menu-toggle');
     if (toggle) {
