@@ -12,8 +12,8 @@
 - Service: daily housekeeping, 24-hour front desk, discrete 24-hour on-site security, free private parking; drinks available to buy on site; scooter rental available; airport transfers and day trips through transport partners
 - Check-in from 14:00; check-out by 11:00
 - Pets not allowed; parties not allowed
-- Well suited to: solo travelers including solo female travelers, couples, digital creatives and remote workers, and yoga or wellness retreat facilitators
-- Design: architect-admired, design-led property; guests often remark on the small details (hand-finished walls, curved lit mirrors, timber and rattan, bougainvillea-covered facades). Every corner is photogenic, making it popular with creators, photographers and stylish travelers; commercial shoots by arrangement
+- Well suited to: solo travellers including solo female travellers, couples, digital creatives and remote workers, and yoga or wellness retreat facilitators
+- Design: architect-admired, design-led property; guests often remark on the small details (hand-finished walls, curved lit mirrors, timber and rattan, bougainvillea-covered facades). Every corner is photogenic, making it popular with creators, photographers and stylish travellers; commercial shoots by arrangement
 - Press: featured in Escape, "These are the hottest Airbnbs in Bali right now"
 - Atmosphere: social but private. Only 12 studios around one shared pool, so guests enjoy easy, low-key company (a quiet chat by the pool) without pressure to socialise, and a private studio to retreat to. Unlike a standalone villa, staff are on site day and night for directions, restaurant tips and drivers.
 - Staff: rated {booking_staff}/10 on Booking.com and frequently praised by name in guest reviews
@@ -55,6 +55,14 @@
 - Uluwatu Temple (Kecak fire dance): 5 to 7 minutes
 - Ngurah Rai International Airport: about 17 km
 - Guest discounts with local partners including YUKI, Kynd, Mood by Ours, Osteria Luna, Tabu and Parker Clothing
+
+## Getting here
+- Airport: Ngurah Rai International (DPS), about 17 km, 40–60 minutes by car depending on traffic; airport transfers through Nema's transport partners
+- Flight times (approximate): Perth 3h45 direct; Sydney, Melbourne, Brisbane about 6h direct; London about 17h with one stop; Frankfurt, Zurich, Amsterdam 16–18h with one stop; Dubai about 9h direct; Los Angeles 20h+ with one stop
+- Time zone: Central Indonesian Time (UTC+8), same as Perth; 2–3 hours behind Sydney/Melbourne; 7–8 hours ahead of London; 6–7 hours ahead of Central Europe
+- Entry (as of October 2026, check before travel): Visa on Arrival / e-VoA for most visitors from Australia, the UK, the EU, Switzerland and the US, about IDR 500,000 for 30 days, extendable once; Bali tourist levy IDR 150,000 per visitor, paid online before arrival
+- Guests come mainly from Australia, the United Kingdom, Germany, the Netherlands, Switzerland, the United States and the UAE; German-speaking and Dutch guests typically stay the longest
+- Languages: pages in German (/de/), French (/fr/) and Dutch (/nl/)
 
 ## Pages
 - [Home](https://nemauluwatu.com/): Overview, guest reviews, location and FAQ

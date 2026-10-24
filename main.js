@@ -27,8 +27,9 @@
     }
 
     // Videos: load only when near the viewport; skip for reduced motion or data saver
+    var conn = navigator.connection || {};
     var calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
-        (navigator.connection && navigator.connection.saveData);
+        conn.saveData || /(^|-)(2g|3g)$/.test(conn.effectiveType || '');
     if (!calm) {
         var heroVideo = document.querySelector('.hero-video');
         if (heroVideo) {
@@ -105,6 +106,18 @@
                 if (Math.abs(dx) > 40) show(current + (dx < 0 ? 1 : -1));
                 x0 = null;
             });
+        }
+    }
+
+    // Offer the translated homepage when the browser language matches
+    var pill = document.querySelector('.lang-suggest');
+    if (pill) {
+        var lang = (navigator.language || '').slice(0, 2).toLowerCase();
+        var offers = { de: ['Auf Deutsch lesen', 'de/'], fr: ['Lire en français', 'fr/'], nl: ['In het Nederlands lezen', 'nl/'] };
+        if (offers[lang]) {
+            var a = document.createElement('a');
+            a.href = offers[lang][1]; a.hreflang = lang; a.textContent = offers[lang][0] + ' \u2192';
+            pill.appendChild(a); pill.hidden = false;
         }
     }
 

@@ -1,3 +1,8 @@
+/* Self-hosted Google Fonts (latin subsets): Cardo + Arimo */
+@font-face { font-family: 'Cardo'; font-style: normal; font-weight: 400; font-display: swap; src: url(/fonts/cardo-400.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Cardo'; font-style: italic; font-weight: 400; font-display: swap; src: url(/fonts/cardo-400-italic.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'Arimo'; font-style: normal; font-weight: 400 700; font-display: swap; src: url(/fonts/arimo.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
 /* Nema. Uluwatu — quiet luxury, editorial */
 :root {
     --color-dark: #1a1a1a;
@@ -744,6 +749,9 @@ h1, h2, h3, h4 {
 .lb-prev { left: 8px; top: 50%; transform: translateY(-50%); }
 .lb-next { right: 8px; top: 50%; transform: translateY(-50%); }
 @media (max-width: 600px) { .lb-prev, .lb-next { top: auto; bottom: 20px; transform: none; } .gallery-page { padding-top: 76px; } }
+
+.lang-suggest { margin-top: 18px; font-size: 0.74rem; letter-spacing: 0.16em; text-transform: uppercase; }
+.lang-suggest a { color: var(--color-light); text-decoration: underline; text-underline-offset: 5px; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
