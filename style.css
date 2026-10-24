@@ -480,8 +480,8 @@ h1, h2, h3, h4 {
 .footer-contact a { border-bottom: 1px solid #444; }
 .footer-links { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 36px; margin: 56px 0 0; padding-top: 40px; border-top: 1px solid #2a2a2a; }
 .footer-links a { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; }
-.footer address { font-style: normal; color: #6f6f6f; font-size: 0.85rem; margin-top: 32px; }
-.footer .copyright { color: #5a5a5a; font-size: 0.78rem; margin-top: 10px; }
+.footer address { font-style: normal; color: #9a9a9a; font-size: 0.85rem; margin-top: 32px; }
+.footer .copyright { color: #8c8c8c; font-size: 0.78rem; margin-top: 10px; }
 
 /* ---------- Mobile booking bar ---------- */
 .bookbar {
@@ -804,7 +804,7 @@ h1, h2, h3, h4 {
 .walk-list.spaced { margin-top: 28px; }
 .retreat-section .narrow .actions { justify-content: center; }
 .value-card.on-light { background: var(--color-light); }
-.lang-switch { margin: 8px 0 0; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: #6f6f6f; }
+.lang-switch { margin: 8px 0 0; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: #9a9a9a; }
 .lang-switch a { color: #d6d6d6; }
 .lang-switch [aria-current] { color: #fff; }
 

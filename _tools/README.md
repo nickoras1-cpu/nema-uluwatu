@@ -10,3 +10,7 @@ Not published: GitHub Pages skips folders that start with `_`.
 The script updates every number on every page (they're wrapped in `<span data-r="...">`), plus the homepage meta description, and rebuilds `llms.txt` from `llms.template.txt`.
 
 To change the text of `llms.txt`, edit `llms.template.txt` and run the script. Don't edit `llms.txt` directly, or your change will be overwritten.
+
+## Styles
+
+Pages carry an inlined copy of `style.css` (for faster first paint on phones). After editing `style.css`, run `python _tools/inline_css.py` from the `site` folder to refresh every page.
