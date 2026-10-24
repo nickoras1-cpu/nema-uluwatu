@@ -125,6 +125,18 @@
         }
     }
 
+    // Anchors into sections that render lazily (content-visibility): a far jump lands on placeholder
+    // heights, so jump instantly, let the neighbours render, then settle on the target
+    var settleHash = function () {
+        var id = location.hash.slice(1), el = id && document.getElementById(id);
+        if (!el || !el.closest('main > section') || Math.abs(el.getBoundingClientRect().top) < window.innerHeight * 1.5) return;
+        var jump = function () { el.scrollIntoView({ block: 'start', behavior: 'instant' }); };
+        jump();
+        requestAnimationFrame(function () { requestAnimationFrame(function () { jump(); setTimeout(jump, 300); }); });
+    };
+    window.addEventListener('hashchange', settleHash);
+    if (location.hash) { window.addEventListener('load', settleHash); }
+
     // Mobile menu
     var toggle = document.querySelector('.menu-toggle');
     if (toggle) {

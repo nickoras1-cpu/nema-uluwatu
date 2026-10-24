@@ -31,8 +31,13 @@ body {
     background-color: var(--color-light);
     line-height: 1.75;
     -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
 }
+
+/* Headings keep kerning and ligatures; body text uses the browser default, which shapes much faster on phones */
+h1, h2, h3 { text-rendering: optimizeLegibility; }
+
+/* Sections below the fold are laid out only as they approach the viewport */
+main > section:not(.hero):not(.gallery-head):not(.g-grid) { content-visibility: auto; contain-intrinsic-size: auto 900px; }
 
 img { display: block; max-width: 100%; height: auto; }
 picture { display: block; }
