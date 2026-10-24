@@ -35,9 +35,13 @@
         if (heroVideo) {
             window.addEventListener('load', function () {
                 var mobile = window.matchMedia('(max-width: 700px)').matches;
-                heroVideo.src = (mobile && heroVideo.dataset.srcMobile) || heroVideo.dataset.src;
-                heroVideo.addEventListener('playing', function () { heroVideo.classList.add('is-playing'); });
-                heroVideo.play().catch(function () {});
+                var start = function () {
+                    heroVideo.src = (mobile && heroVideo.dataset.srcMobile) || heroVideo.dataset.src;
+                    heroVideo.addEventListener('playing', function () { heroVideo.classList.add('is-playing'); });
+                    heroVideo.play().catch(function () {});
+                };
+                // Phones show the still first; the clip joins once the page has settled
+                if (mobile) { setTimeout(start, 3500); } else { start(); }
             });
         }
         var vids = document.querySelectorAll('video[data-src]:not(.hero-video)');

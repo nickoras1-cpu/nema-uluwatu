@@ -828,3 +828,6 @@ h1, h2, h3, h4 {
 .retreat-section .feature-split .text-link { color: var(--color-light); }
 .retreat-grid img { object-position: center 75%; }
 .mat-section .mat-photo img { aspect-ratio: auto; height: auto; object-fit: initial; }
+
+/* Phones: a still hero, no slow zoom (keeps the first viewport stable while the page loads) */
+@media (max-width: 700px) { .hero-media img { animation: none; } }
