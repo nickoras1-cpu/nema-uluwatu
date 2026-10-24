@@ -522,7 +522,7 @@ h1, h2, h3, h4 {
 .ratings-band { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; gap: clamp(28px, 6vw, 96px); margin: clamp(40px, 5vw, 64px) auto 0; }
 .ratings-band li { display: flex; align-items: center; gap: 16px; text-align: left; }
 .ratings-band strong { font-family: var(--font-heading); font-weight: 400; font-size: clamp(2.8rem, 5vw, 3.8rem); line-height: 1; color: var(--color-darker); }
-.ratings-band span { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-text-muted); line-height: 1.6; }
+.ratings-band li > span { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-text-muted); line-height: 1.6; }
 
 .featured-quote { max-width: 980px; margin: clamp(56px, 7vw, 96px) auto 0; }
 .featured-quote p { font-family: var(--font-heading); font-style: italic; font-size: clamp(1.7rem, 3.6vw, 2.9rem); line-height: 1.3; color: var(--color-darker); }
@@ -557,7 +557,7 @@ h1, h2, h3, h4 {
 .place-list strong { display: block; font-family: var(--font-heading); font-weight: 400; font-size: 1.2rem; color: var(--color-darker); }
 .place-list span { color: var(--color-text-muted); font-size: 0.95rem; }
 
-.spec-grid { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: clamp(48px, 6vw, 72px); border-top: 1px solid var(--color-dark); }
+.spec-grid { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: clamp(48px, 6vw, 72px); border-top: 1px solid var(--color-dark); }
 .spec-grid > div { padding: 24px 24px 24px 0; border-bottom: 1px solid var(--color-line); }
 .spec-grid dt { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-text-muted); margin-bottom: 8px; }
 .spec-grid dd { font-family: var(--font-heading); font-size: 1.2rem; line-height: 1.45; color: var(--color-darker); }
@@ -614,6 +614,9 @@ h1, h2, h3, h4 {
 .distance-table tbody th { font-weight: 600; color: var(--color-darker); }
 .distance-table td:nth-child(2) { white-space: nowrap; font-family: var(--font-heading); font-size: 1.05rem; color: var(--color-darker); }
 .distance-table td:last-child { color: var(--color-text-muted); }
+.compare-table td:nth-child(2) { white-space: normal; font-family: inherit; font-size: inherit; color: var(--color-darker); }
+.compare-table th, .compare-table td { width: 40%; }
+.compare-table th:first-child { width: 20%; }
 
 .journal-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(28px, 3.5vw, 52px); }
 .journal-grid.two { grid-template-columns: repeat(2, 1fr); max-width: 980px; margin: clamp(40px, 5vw, 64px) auto 0; }
@@ -654,6 +657,34 @@ h1, h2, h3, h4 {
     .feature-split, .team-quotes, .value-grid { grid-template-columns: 1fr; }
     .feature-split img { aspect-ratio: 4 / 3; }
 }
+
+/* ---------- Seasons / proof ---------- */
+.hero-proof { margin-top: 26px; font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.9; text-shadow: 0 1px 10px rgba(0,0,0,0.35); }
+.season-list { list-style: none; border-top: 1px solid #444; }
+.season-list li { padding: 20px 0; border-bottom: 1px solid #333; }
+.season-list strong { display: block; font-family: var(--font-heading); font-weight: 400; font-size: 1.4rem; color: var(--color-light); margin-bottom: 4px; }
+.season-list span { color: #a8a8a8; font-size: 0.96rem; }
+.retreat-section .feature-split p { color: #b0b0b0; }
+.retreat-section .feature-split .section-title { color: var(--color-light); }
+.retreat-section .feature-split .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 28px; margin-top: 36px; }
+.month-table td:nth-child(2) { white-space: normal; font-family: inherit; font-size: inherit; color: var(--color-darker); }
+
+/* ---------- Design / press ---------- */
+.design-section .feature-split p { color: var(--color-text-muted); }
+.press-line { margin-top: 28px; padding-top: 22px; border-top: 1px solid var(--color-line); font-size: 0.74rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-darker) !important; }
+.press-line em { font-family: var(--font-heading); font-style: italic; font-size: 1.15rem; letter-spacing: 0.02em; text-transform: none; }
+
+/* ---------- Food ---------- */
+.food-grid { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); margin-top: clamp(44px, 5vw, 64px); border-top: 1px solid var(--color-line); border-left: 1px solid var(--color-line); }
+.food-grid li { padding: 26px 24px; border-right: 1px solid var(--color-line); border-bottom: 1px solid var(--color-line); }
+.food-grid .d-time { display: block; font-family: var(--font-heading); font-size: 1.45rem; color: var(--color-darker); margin-bottom: 8px; }
+.food-grid strong { display: block; font-size: 0.74rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 6px; }
+.food-grid li > span:last-child { color: var(--color-text-muted); font-size: 0.95rem; }
+.food-note { margin-top: 32px; color: var(--color-text-muted); }
+.keyring-badge { display: inline-block; margin-right: 10px; padding: 4px 12px; border: 1px solid var(--color-darker); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-darker); }
+.sub-title { font-size: 1.5rem; margin: 30px 0 12px; }
+@media (max-width: 900px) { .food-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .food-grid { grid-template-columns: 1fr; } .keyring-badge { display: block; width: max-content; margin: 0 auto 10px; } }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
@@ -708,4 +739,20 @@ h1, h2, h3, h4 {
     html { scroll-behavior: auto; }
     *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
     .reveal-ready .reveal { opacity: 1; transform: none; }
+}
+
+/* ---------- Language pages ---------- */
+.walk-list.spaced { margin-top: 28px; }
+.retreat-section .narrow .actions { justify-content: center; }
+.value-card.on-light { background: var(--color-light); }
+.lang-switch { margin: 8px 0 0; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: #6f6f6f; }
+.lang-switch a { color: #d6d6d6; }
+.lang-switch [aria-current] { color: #fff; }
+
+/* ---------- Five-item nav ---------- */
+.nav-links a, .btn-book { white-space: nowrap; }
+@media (min-width: 901px) and (max-width: 1180px) {
+    .nav-links { gap: 18px; }
+    .nav-links a { font-size: 0.68rem; letter-spacing: 0.12em; }
+    .navbar .btn-book { padding: 0 18px; letter-spacing: 0.12em; }
 }
