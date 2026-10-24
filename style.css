@@ -702,7 +702,8 @@ h1, h2, h3, h4 {
 @media (max-width: 900px) { .media-video video { aspect-ratio: 4 / 4.6; } }
 
 /* ---------- Co-branded mats ---------- */
-.mat-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 70%; }
+.mat-photo img { width: 100%; height: auto; }
+.mat-photo figcaption { margin-top: 12px; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-text-muted); }
 .mat-section .feature-split p { color: var(--color-text-muted); }
 .mat-section .feature-split p + p { margin-top: 1em; }
 .mat-actions { margin-top: 32px; }
@@ -783,3 +784,4 @@ h1, h2, h3, h4 {
 }
 .retreat-section .feature-split .text-link { color: var(--color-light); }
 .retreat-grid img { object-position: center 75%; }
+.mat-section .mat-photo img { aspect-ratio: auto; height: auto; object-fit: initial; }

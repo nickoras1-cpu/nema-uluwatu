@@ -25,7 +25,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
-    <link rel="stylesheet" href="../style.css?v=15">
+    <link rel="stylesheet" href="../style.css?v=17">
 
     <script type="application/ld+json">
     {
@@ -274,10 +274,13 @@
 
         <section class="section mat-section" aria-labelledby="mats-title">
             <div class="feature-split">
-                <picture class="reveal mat-photo">
-                    <source type="image/webp" srcset="../images/yoga-deck-720.webp">
-                    <img src="../images/yoga-deck-720.jpg" alt="A guest in downward dog on the paved pool deck at Nema. Uluwatu" width="720" height="1280" loading="lazy" decoding="async">
-                </picture>
+                <figure class="reveal mat-photo">
+                    <picture>
+                        <source type="image/webp" srcset="../images/yoga-mat-800.webp 800w, ../images/yoga-mat-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 50vw">
+                        <img src="../images/yoga-mat-800.jpg" alt="A terracotta yoga mat printed with the Nema. Uluwatu logo and a studio name, laid on pale stone paving with palm shadows" width="800" height="447" loading="lazy" decoding="async">
+                    </picture>
+                    <figcaption>An example co-branded mat: your studio's name alongside ours.</figcaption>
+                </figure>
                 <div class="reveal">
                     <span class="eyebrow">A Retreat Keepsake</span>
                     <h2 class="section-title" id="mats-title">Custom mats for your retreat</h2>
