@@ -14,3 +14,11 @@ To change the text of `llms.txt`, edit `llms.template.txt` and run the script. D
 ## Styles
 
 Pages carry an inlined copy of `style.css` (for faster first paint on phones). After editing `style.css`, run `python _tools/inline_css.py` from the `site` folder to refresh every page.
+
+## Text for AI assistants
+
+`llms.txt` is the short fact sheet (built from `llms.template.txt` by `update_ratings.py`). `llms-full.txt` is the plain text of every English page; rebuild it after any content change with `python _tools/llms_full.py`.
+
+## Sitemap dates
+
+`python _tools/sitemap_build.py` sets each page's `<lastmod>` from its last git commit (uncommitted edits count as today). Run it before committing content changes.

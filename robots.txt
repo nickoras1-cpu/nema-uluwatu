@@ -46,4 +46,17 @@ Allow: /
 User-agent: DuckAssistBot
 Allow: /
 
+User-agent: Claude-User
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# Plain-text summaries for assistants: /llms.txt and /llms-full.txt
 Sitemap: https://nemauluwatu.com/sitemap.xml

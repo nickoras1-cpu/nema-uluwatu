@@ -3,6 +3,7 @@
 > Nema. Uluwatu is a boutique property of 12 private studios in central Uluwatu, Bali, Indonesia, tucked down a quiet lane off the main Uluwatu road and a short walk from Thomas Beach. It combines the privacy of an exclusive retreat with the refined luxury of a boutique hotel, and is rated {booking_score} "{booking_label}" on Booking.com ({booking_reviews} reviews) and {google_score} stars on Google ({google_reviews} reviews). Guests book directly via WhatsApp; retreat facilitators can reserve the entire 12-studio property as a venue for their own yoga, wellness or team retreat.
 
 ## Key facts
+- Type: small boutique hotel of 12 private studios around one pool, run with a 24-hour front desk and daily housekeeping; not a private villa (some booking sites list it as an aparthotel or serviced apartment)
 - Property type: Boutique accommodation, 12 private studios around a 16m pool
 - Address: 53JW+VRQ, Pecatu, South Kuta, Badung Regency, Bali 80361, Indonesia
 - Coordinates: -8.817868, 115.097039
@@ -83,6 +84,8 @@
 - [The Best Time to Visit Uluwatu](https://nemauluwatu.com/journal/best-time-to-visit-uluwatu/)
 - [How to Run a More Profitable Retreat in Bali](https://nemauluwatu.com/journal/profitable-bali-retreat/)
 - [Learn to Surf at Thomas Beach, Uluwatu](https://nemauluwatu.com/journal/learn-to-surf-thomas-beach/)
+
+- [Full text of every English page](https://nemauluwatu.com/llms-full.txt)
 
 ## Other languages
 - [Deutsch](https://nemauluwatu.com/de/)
